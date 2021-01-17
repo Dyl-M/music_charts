@@ -123,3 +123,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+/code_secret_client.json
+/token_youtube_v3.pickle
+.idea/

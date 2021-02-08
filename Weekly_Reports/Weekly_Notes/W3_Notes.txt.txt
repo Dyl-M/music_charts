@@ -1,0 +1,177 @@
+--- TRACKS ---
+
+/// WEEK /// *
+
+       Artist       Track_Name                    Label  YouTube_Views
+0  Saint Punk        Empty Bed               Monstercat         109032
+1      WbToys  Let Me Love You   HEXAGON, GenerationHEX          94868
+2      Misfit           Mirage  BreadnButter, Trap City          64075
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// *
+
+                Artist       Track_Name    Label  YouTube_Views
+0  Arlow, Shiah Maisel               21      NCS        1014729
+1      Porter Robinson  Loot At The Sky  MOM+POP         959563
+2              Castion   Banger Machine      NCS         797464
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK /// *
+
+                      Artist Track_Name                                Label  1001T_Supports  1001T_TotPlays
+0      REGGIO, Rave Republic     Legacy                  Revealed Recordings              26              27
+1                       NUZB  Nighttime                          STMPD RCRDS              21              21
+2  DJ St3v3, Sebastian Mateo    So Sexy  Revealed Recordings, Revealed Radar              17              18
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// *
+
+       Artist             Track_Name        Label  1001T_Supports  1001T_TotPlays
+0    Malarkey  Shackles (Praise You)      HEXAGON              99             109
+1  Body Ocean         Once The Music  STMPD RCRDS              57              58
+2     Mo Falk               I'm Back      HEXAGON              40              43
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK /// *
+
+                  Artist       Track_Name                   Label  Soundcloud_Plays
+0             Saint Punk        Empty Bed              Monstercat             41055
+1  REGGIO, Rave Republic           Legacy     Revealed Recordings             10182
+2                 WbToys  Let Me Love You  HEXAGON, GenerationHEX              7015
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// *
+
+                       Artist       Track_Name       Label  Soundcloud_Plays
+0             TYNAN, Ace Aura             Stay  Monstercat             74953
+1             Porter Robinson  Loot At The Sky     MOM+POP             64794
+2  deadmau5, Wolfgang Gartner       Channel 43    mau5trap             42543
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+--- ARTISTS ---
+
+/// WEEK /// *
+
+       Artist  YouTube_Views
+0  Saint Punk         109032
+1      WbToys          94868
+2      Misfit          64075
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// *
+
+            Artist  YouTube_Views
+0            Arlow        1014729
+1     Shiah Maisel        1014729
+2  Porter Robinson         959563
+3          Castion         797464
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK /// *
+
+            Artist  1001T_Supports  1001T_TotPlays
+0           REGGIO              26              27
+1    Rave Republic              26              27
+2             NUZB              21              21
+3         DJ St3v3              17              18
+4  Sebastian Mateo              17              18
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// *
+
+       Artist  1001T_Supports  1001T_TotPlays
+0    Malarkey              99             109
+1  Body Ocean              57              58
+2     Mo Falk              40              43
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK /// *
+
+          Artist  Soundcloud_Plays
+0     Saint Punk             41055
+1         REGGIO             10182
+2  Rave Republic             10182
+3         WbToys              7015
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// *
+
+             Artist  Soundcloud_Plays
+0          Ace Aura             74953
+1             TYNAN             74953
+2   Porter Robinson             64794
+3  Wolfgang Gartner             42543
+4          deadmau5             42543
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+--- LABELS ---
+
+/// WEEK /// *
+
+           Label  YouTube_Views
+0     Monstercat         109032
+1  GenerationHEX          94868
+2        HEXAGON          94868
+3   BreadnButter          64075
+4      Trap City          64075
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// *
+
+      Label  YouTube_Views
+0       NCS        1812193
+1   MOM+POP         959563
+2  mau5trap         691532
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK /// *
+
+                 Label  1001T_Supports  1001T_TotPlays
+0  Revealed Recordings              54              57
+1          STMPD RCRDS              21              21
+2       Revealed Radar              17              18
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// *
+
+                 Label  1001T_Supports  1001T_TotPlays
+0              HEXAGON             198             213
+1          STMPD RCRDS             168             178
+2  Revealed Recordings             109             124
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK /// *
+
+                 Label  Soundcloud_Plays
+0           Monstercat             41055
+1  Revealed Recordings             16539
+2        GenerationHEX              7015
+3              HEXAGON              7015
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+         Label  Soundcloud_Plays
+0   Monstercat            178202
+1      MOM+POP             64794
+2  STMPD RCRDS             60428
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+

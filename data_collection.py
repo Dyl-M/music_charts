@@ -1,22 +1,25 @@
 # -*- coding: utf-8 -*-
 
-import numpy as np
-import pandas as pd
 import random
 import re
-import requests
-# import shadow_useragent
-
-from bs4 import BeautifulSoup
 from calendar import monthrange
 from datetime import datetime
-from fake_headers import Headers
-# from fake_useragent import UserAgent
-from Google import Create_Service
 from time import sleep
-from urllib.request import Request, urlopen
+
+import numpy as np
+import pandas as pd
+import requests
+from bs4 import BeautifulSoup
+from fake_headers import Headers
+from nordvpn_switcher import initialize_VPN, rotate_VPN, terminate_VPN
+
+from Google import Create_Service
+
+# import shadow_useragent
+# from fake_useragent import UserAgent
 
 pd.set_option('display.max_columns', None)
+pd.options.mode.chained_assignment = None  # default='warn'
 
 """ - CREDITS - """
 
@@ -49,23 +52,24 @@ https://twitter.com/Dyl_M_DJ/status/1347261399773421570
 
 alias = {"PBH & Jack": "PBH & Jack Shizzle", "Daffy Muffin": "Lucas & Steve", "AREA21": ["Martin Garrix", "Maejor"],
          "Ytram": "Martin Garrix", "Major Lazer": ["Diplo", "Walshy Fire", "Ape Drums"], "Big Pineapple": "Don Diablo",
-         "VIRTUAL SELF": "Porter Robinson", "Streex": "Razihel", "Jack Ü": ["Skrillex", "Diplo"],
+         "VIRTUAL SELF": "Porter Robinson", "Streex": "Razihel", "Jack Ü": ["Skrillex", "Diplo"], "NWYR": "W&W",
          "Axwell Λ Ingrosso": ["Sebastian Ingrosso", "Axwell"], "Bastille": "Dan Smith", "Dan Smith": "Bastille",
-         "Swedish House Mafia": ["Axwell", "Sebastian Ingrosso", "Steve Angello"], "NWYR": "W&W",
+         "Swedish House Mafia": ["Axwell", "Sebastian Ingrosso", "Steve Angello"], "Jeffrey Sutorius": "Dash Berlin",
          "Shindeai": ["STARRYSKY", "Tai Wuang"], "Sasha": "STARRYSKY", "Casseurs Flowters": ["OrelSan", "Gringe"],
          "Sinnoh Fusion Ensemble": "insaneintherainmusic", "Destroid": ["Excision", "Far Too Loud"],
-         "Jeffrey Sutorius": "Dash Berlin", "Jaxxwell": ["Hardwell", "Blasterjaxx"]}
+         "Jaxxwell": ["Hardwell", "Blasterjaxx"]}
 
-weak_alias = {"AvB": "Armin van Buuren", "Rising Star": "Armin van Buuren", "NLW": "Afrojack",
+weak_alias = {"AvB": "Armin van Buuren", "Rising Star": "Armin van Buuren", "NLW": "Afrojack", "GRX": "Martin Garrix",
               "Jayden Jaxx": "Crime Zcene", "Chill Harris": "Kill Paris", "DJ Afrojack": "Afrojack",
-              "Ravitez": "Chico Rose", "GRX": "Martin Garrix", "Kerafix & Vultaire": "KEVU",
-              "Lush & Simon": ["Simon Says", "Zen/It"], "Matthew Ros": "MWRS", "Grant Bowtie": "Grant",
-              "M.E.G. & N.E.R.A.K.": "DJ M.E.G.", "MEG / NERAK": "DJ M.E.G.", "Dzeko & Torres": "Dzeko",
-              "X-Teef": "Stemalø", "Paris & Simo": "Prince Paris", "The Eden Project": "EDEN", "Astra": "ASHWYN",
-              "Slips & Slurs": "Slippy", "Vorwerk": "Maarten Vorwerk", "Will & Tim": "NewGamePlus",
-              "DBSTF": "D-Block & S-te-Fan", "Maître Gims": "GIMS", "Muzzy": "MUZZ", "Richard Caddock": "Keepsake",
-              "Joey Rumble": "Modern Revolt", "Michelle McKenna": "Michelle Platnum", "Ben Lepper": "Cloud Cage",
-              "Juventa": "Jordin Post"}
+              "Ravitez": "Chico Rose", "Kerafix & Vultaire": "KEVU", "Lush & Simon": ["Simon Says", "Zen/It"],
+              "Matthew Ros": "MWRS", "Grant Bowtie": "Grant", "M.E.G. & N.E.R.A.K.": "DJ M.E.G.",
+              "MEG / NERAK": "DJ M.E.G.", "Dzeko & Torres": "Dzeko", "X-Teef": "Stemalø", "Juventa": "Jordin Post",
+              "Paris & Simo": "Prince Paris", "The Eden Project": "EDEN", "Astra": "ASHWYN", "Slips & Slurs": "Slippy",
+              "Vorwerk": "Maarten Vorwerk", "Will & Tim": "NewGamePlus", "DBSTF": "D-Block & S-te-Fan",
+              "Maître Gims": "GIMS", "Muzzy": "MUZZ", "Richard Caddock": "Keepsake", "Joey Rumble": "Modern Revolt",
+              "Michelle McKenna": "Michelle Platnum", "Ben Lepper": "Cloud Cage"}
+
+exception_1001T = {'sub71u5'}
 
 """ - LOCAL FUNCTIONS - """
 
@@ -87,14 +91,14 @@ def api_get_videos_views(list_videos_ids, a_service):
         request = a_service.videos().list(id=",".join(chunk), part='statistics', maxResults=50).execute()
         views += [element['statistics']['viewCount'] for element in request["items"]]
 
-    id_and_duration = {video_id: {'views': int(views)} for video_id, views in zip(list_videos_ids, views)}
+    id_and_views = {video_id: {'views': int(views)} for video_id, views in zip(list_videos_ids, views)}
 
-    return id_and_duration
+    return id_and_views
 
 
 def clean_html(raw_html):
     """
-    A function to remove HTLM tags.
+    A function to remove HTML tags.
 
     :param raw_html: Unprocessed HTML code.
     :return: Processed HTML code.
@@ -111,7 +115,7 @@ def data_by_artist(dataframe):
     A function that groups and sums statistics by artist.
 
     :param dataframe: A reference dataframe.
-    :return: Result of the groupby.
+    :return: Result of the grouping.
     """
 
     dataframe.Artist = dataframe.fillna('NONE').Artist.apply(lambda x: x.split(', '))
@@ -125,12 +129,15 @@ def data_by_label(dataframe):
     A function that groups and sums statistics by label.
 
     :param dataframe: A reference dataframe.
-    :return: Result of the groupby.
+    :return: Result of the grouping.
     """
 
     dataframe.Label = dataframe.fillna('NONE').Label.apply(lambda x: x.split(', '))
     dataframe = dataframe.explode('Label').groupby('Label').sum()
-    dataframe = dataframe.drop('NONE')
+    try:
+        dataframe = dataframe.drop('NONE')
+    except KeyError:
+        pass
 
     return dataframe
 
@@ -145,14 +152,35 @@ def data_sorted_1001trl(df_track, df_artist, df_label):
     :return: Dataframes sorted.
     """
 
-    df_track = df_track[["Artist", 'Track_Name', 'Label', '1001T_TotPlays', '1001T_Supports']] \
-        .sort_values(['1001T_TotPlays', '1001T_Supports', "Track_Name"], ascending=[False, False, True])
+    df_track = df_track.loc[:, ["Artist", 'Track_Name', 'Label', '1001T_Supports', '1001T_TotPlays']] \
+        .sort_values(['1001T_Supports', '1001T_TotPlays', "Track_Name"], ascending=[False, False, True])
 
-    df_artist = df_artist[['1001T_TotPlays', '1001T_Supports']] \
-        .sort_values(['1001T_TotPlays', '1001T_Supports', "Artist"], ascending=[False, False, True])
+    df_artist = df_artist.loc[:, ['1001T_Supports', '1001T_TotPlays']] \
+        .sort_values(['1001T_Supports', '1001T_TotPlays', "Artist"], ascending=[False, False, True])
 
-    df_label = df_label[['1001T_TotPlays', '1001T_Supports']] \
-        .sort_values(['1001T_TotPlays', '1001T_Supports', "Label"], ascending=[False, False, True])
+    df_label = df_label.loc[:, ['1001T_Supports', '1001T_TotPlays']] \
+        .sort_values(['1001T_Supports', '1001T_TotPlays', "Label"], ascending=[False, False, True])
+
+    return df_track, df_artist, df_label
+
+
+def data_sorted_sndcld(df_track, df_artist, df_label):
+    """
+    A function to select and sort Soundcloud stats.
+
+    :param df_track: A dataframe of tracks.
+    :param df_artist: A dataframe of artists.
+    :param df_label: A dataframe of labels.
+    :return: Dataframes sorted.
+    """
+
+    df_track = df_track.loc[:, ["Artist", 'Track_Name', 'Label', "Soundcloud_Plays"]] \
+        .sort_values(["Soundcloud_Plays", "Track_Name"], ascending=[False, True])
+
+    df_artist = df_artist.loc[:, ["Soundcloud_Plays"]] \
+        .sort_values(["Soundcloud_Plays", "Artist"], ascending=[False, True])
+
+    df_label = df_label.loc[:, ["Soundcloud_Plays"]].sort_values(["Soundcloud_Plays", "Label"], ascending=[False, True])
 
     return df_track, df_artist, df_label
 
@@ -166,13 +194,12 @@ def data_sorted_youtube(df_track, df_artist, df_label):
     :param df_label: A dataframe of labels.
     :return: Dataframes sorted.
     """
-
-    df_track = df_track[["Artist", 'Track_Name', 'Label', "YouTube_Views"]] \
+    df_track = df_track.loc[:, ["Artist", 'Track_Name', 'Label', "YouTube_Views"]] \
         .sort_values(["YouTube_Views", "Track_Name"], ascending=[False, True])
 
-    df_artist = df_artist[["YouTube_Views"]].sort_values(["YouTube_Views", "Artist"], ascending=[False, True])
+    df_artist = df_artist.loc[:, ["YouTube_Views"]].sort_values(["YouTube_Views", "Artist"], ascending=[False, True])
 
-    df_label = df_label[["YouTube_Views"]].sort_values(["YouTube_Views", "Label"], ascending=[False, True])
+    df_label = df_label.loc[:, ["YouTube_Views"]].sort_values(["YouTube_Views", "Label"], ascending=[False, True])
 
     return df_track, df_artist, df_label
 
@@ -235,14 +262,23 @@ def export_alltime_part(df_by_track, df_by_artist, df_by_label):
                                                                                                df_by_artist,
                                                                                                df_by_label)
 
+    alltime_track_sndcld, alltime_artist_sndcld, alltime_label_sndcld = data_sorted_sndcld(df_by_track,
+                                                                                           df_by_artist,
+                                                                                           df_by_label)
+
     writer = pd.ExcelWriter('2021 Charts OUT All Time.xlsx', engine='xlsxwriter')
 
     alltime_track_youtube.to_excel(writer, sheet_name='By_Track_YouTube', index=False)
     alltime_track_1001trl.to_excel(writer, sheet_name='By_Track_1001Tracklists', index=False)
+    alltime_track_sndcld.to_excel(writer, sheet_name='By_Track_Soundcloud', index=False)
+
     alltime_artist_youtube.to_excel(writer, sheet_name='By_Artist_YouTube')
     alltime_artist_1001trl.to_excel(writer, sheet_name='By_Artist_1001Tracklists')
+    alltime_artist_sndcld.to_excel(writer, sheet_name='By_Artist_Soundcloud')
+
     alltime_label_youtube.to_excel(writer, sheet_name='By_Label_YouTube')
     alltime_label_1001trl.to_excel(writer, sheet_name='By_Label_1001Tracklists')
+    alltime_label_sndcld.to_excel(writer, sheet_name='By_Label_Soundcloud')
 
     writer.save()
 
@@ -266,14 +302,23 @@ def export_monthly_part(df_by_track, df_by_artist, df_by_label, folder, month_nu
                                                                                          df_by_artist,
                                                                                          df_by_label)
 
+    month_track_sndcld, month_artist_sndcld, month_label_sndcld = data_sorted_sndcld(df_by_track,
+                                                                                     df_by_artist,
+                                                                                     df_by_label)
+
     writer = pd.ExcelWriter(f'{folder}2021 Charts Month {month_number}.xlsx', engine='xlsxwriter')
 
     month_track_youtube.to_excel(writer, sheet_name='By_Track_YouTube', index=False)
     month_track_1001trl.to_excel(writer, sheet_name='By_Track_1001Tracklists', index=False)
+    month_track_sndcld.to_excel(writer, sheet_name='By_Track_Soundcloud', index=False)
+
     month_artist_youtube.to_excel(writer, sheet_name='By_Artist_YouTube')
     month_artist_1001trl.to_excel(writer, sheet_name='By_Artist_1001Tracklists')
+    month_artist_sndcld.to_excel(writer, sheet_name='By_Artist_Soundcloud')
+
     month_label_youtube.to_excel(writer, sheet_name='By_Label_YouTube')
     month_label_1001trl.to_excel(writer, sheet_name='By_Label_1001Tracklists')
+    month_label_sndcld.to_excel(writer, sheet_name='By_Label_Soundcloud')
 
     writer.save()
 
@@ -297,14 +342,23 @@ def export_weekly_part(df_by_track, df_by_artist, df_by_label, folder, week_numb
                                                                                       df_by_artist,
                                                                                       df_by_label)
 
+    week_track_sndcld, week_artist_sndcld, week_label_sndcld = data_sorted_sndcld(df_by_track,
+                                                                                  df_by_artist,
+                                                                                  df_by_label)
+
     writer = pd.ExcelWriter(f'{folder}2021 Charts Week {week_number}.xlsx', engine='xlsxwriter')
 
     week_track_youtube.to_excel(writer, sheet_name='By_Track_YouTube', index=False)
     week_track_1001trl.to_excel(writer, sheet_name='By_Track_1001Tracklists', index=False)
+    week_track_sndcld.to_excel(writer, sheet_name='By_Track_Soundcloud', index=False)
+
     week_artist_youtube.to_excel(writer, sheet_name='By_Artist_YouTube')
     week_artist_1001trl.to_excel(writer, sheet_name='By_Artist_1001Tracklists')
+    week_artist_sndcld.to_excel(writer, sheet_name='By_Artist_Soundcloud')
+
     week_label_youtube.to_excel(writer, sheet_name='By_Label_YouTube')
     week_label_1001trl.to_excel(writer, sheet_name='By_Label_1001Tracklists')
+    week_label_sndcld.to_excel(writer, sheet_name='By_Label_Soundcloud')
 
     writer.save()
 
@@ -346,11 +400,25 @@ def get_1001tracklists_data(dataframe):
     dataframe["1001T_TotPlays"] = 0
     dataframe["1001T_Supports"] = 0
 
+    initialize_VPN(save=1, area_input=['complete rotation'])
+
     for idx, row in dataframe.iterrows():
-        if pd.notna(row['1001Tracklists_ID']):
-            sleep(random.gauss(3, 1))
-            data_1001tt = get_1001tracklists_track_data(row['1001Tracklists_ID'])
+
+        if pd.notna(row['1001Tracklists_ID']) and row['1001Tracklists_ID'] not in exception_1001T:
+
+            try:
+                data_1001tt = get_1001tracklists_track_data(row['1001Tracklists_ID'])
+
+            except IndexError:
+                rotate_VPN()
+                data_1001tt = get_1001tracklists_track_data(row['1001Tracklists_ID'])
+
             dataframe.loc[idx, "1001T_Supports"], dataframe.loc[idx, "1001T_TotPlays"] = data_1001tt
+
+        sleep(1)
+
+    terminate_VPN()
+
     return dataframe
 
 
@@ -362,16 +430,19 @@ def get_1001tracklists_track_data(id_1001tl):
     :return: a list [Unique DJ Supports, Plays]
     """
     print(id_1001tl)
+
     page_link = f'https://www.1001tracklists.com/track/{id_1001tl}/'
     page_response = requests.get(page_link, headers=Headers().generate())
+
     soup = BeautifulSoup(page_response.content, "html.parser")
 
     supports = soup.find_all("span", class_='badge', title="total unique DJ supports")[0]
     int_supp = int(clean_html(supports).replace('x', ''))
-    # print(soup)
+
     try:
         tot_play = soup.find_all("td", colspan="2", text=re.compile('Total Tracklist Plays:.'))[0]
         int_play = int(clean_html(tot_play).replace('x', '').replace('Total Tracklist Plays: ', ''))
+
     except IndexError:
         int_play = int(0)
 
@@ -382,8 +453,9 @@ def get_data(data_frame, month_number, week_day_start, week_day_end):
     """
     A function to get various data from music on these different platforms:
         - YouTube
-        - 1001Tracklists #TODO Work In Progress - Needs a VPN for now.
-        - Soundcloud #TODO Need Help!
+        - 1001Tracklists # Needs a VPN for now.
+        - Soundcloud # Needs a VPN for now.
+
         - Spotify #TODO Need Help!
         - Apple Music #TODO Need Help!
         - Deezer #TODO Need Help!
@@ -403,11 +475,57 @@ def get_data(data_frame, month_number, week_day_start, week_day_end):
 
     data = get_youtube_data(data_frame)
     data = get_1001tracklists_data(data)
+    data = get_soundcloud_data(data)
 
-    data_week = data[(data.Release_Date >= week_day_start) & (data.Release_Date <= week_day_end)]
-    data_month = data[(data.Release_Date >= month_day_start) & (data.Release_Date <= month_day_end)]
+    data_week = data.loc[(data.Release_Date >= week_day_start) & (data.Release_Date <= week_day_end)]
+    data_month = data.loc[(data.Release_Date >= month_day_start) & (data.Release_Date <= month_day_end)]
 
     return data, data_week, data_month
+
+
+def get_soundcloud_data(data_frame):
+    """
+    A function to get data from Soundcloud (here, plays for each music).
+
+    :param data_frame: A dataframe with the Soundcloud links associated to each music.
+    :return: The same dataframe but with the total number of views for each music.
+    """
+
+    df = data_frame.fillna("NONE")
+    soundcloud_dict = dict()
+    tracks_plays = dict()
+
+    for an_idx, a_row in df.iterrows():
+        soundcloud_dict[a_row["Soundcloud_Link1"]] = [an_idx]
+        soundcloud_dict[a_row["Soundcloud_Link2"]] = [an_idx]
+
+    df1 = pd.DataFrame(soundcloud_dict).transpose().rename({0: "idx"}, axis=1).drop(index="NONE")
+    tracks = list(df1.index)
+
+    initialize_VPN(save=1, area_input=['complete rotation'])
+
+    for track in tracks:
+
+        try:
+            tracks_plays[track] = {'plays': soundcloud_scrapping(track)}
+
+        except ConnectionError:
+            rotate_VPN()
+            tracks_plays[track] = {'plays': soundcloud_scrapping(track)}
+
+        sleep(1)
+
+    terminate_VPN()
+
+    df2 = pd.DataFrame(tracks_plays).transpose().rename({0: "idx", 1: "plays"}, axis=1)
+
+    concat = pd.merge(df1, df2, left_index=True, right_index=True)
+    plays_sum = concat.groupby("idx").sum()
+
+    final = pd.merge(data_frame, plays_sum, left_index=True, right_index=True).rename({'plays': "Soundcloud_Plays"},
+                                                                                      axis=1)
+
+    return final
 
 
 def get_youtube_data(data_frame):
@@ -446,28 +564,45 @@ def get_youtube_data(data_frame):
 
     view_sum = concat.groupby("idx").sum()
 
-    final = pd.merge(data_in, view_sum, left_index=True, right_index=True).rename({'views': "YouTube_Views"}, axis=1)
+    final = pd.merge(data_frame, view_sum, left_index=True, right_index=True).rename({'views': "YouTube_Views"}, axis=1)
 
     return final
 
 
+def soundcloud_scrapping(soundcloud_url):
+    print(soundcloud_url)
+    page_link = f'https://soundcloud.com/{soundcloud_url}/'
+    page_response = requests.get(page_link, headers=Headers().generate())
+    soup = BeautifulSoup(page_response.content, "html.parser")
+
+    # print(soup)
+
+    plays = str(soup.find_all("meta", property="soundcloud:play_count")[0])
+    plays = int(re.search('meta content="(.+?)"', plays).group(1))
+    # print(plays)
+    # sleep(random.gauss(3, 1))
+
+    return plays
+
+
 " - MAIN PROGRAM -"
 
-week_sta_str = "2021-01-18"
-week_end_str = "2021-01-24"
+if __name__ == "__main__":
+    week_sta_str = "2021-01-18"
+    week_end_str = "2021-01-24"
 
-week_sta_dt = datetime.strptime(week_sta_str, '%Y-%m-%d')
-week_end_dt = datetime.strptime(week_end_str, '%Y-%m-%d')
+    week_sta_dt = datetime.strptime(week_sta_str, '%Y-%m-%d')
+    week_end_dt = datetime.strptime(week_end_str, '%Y-%m-%d')
 
-m_num = 1
-w_num = 3
+    m_num = 1
+    w_num = 3
 
-data_in = find_alias(pd.read_excel("2021 Charts IN.xlsx"))
+    data_in = find_alias(pd.read_excel("2021 Charts IN.xlsx"))
 
-test = export(data_frame=data_in,
-              month_number=m_num,
-              week_day_start=week_sta_str,
-              week_day_end=week_end_str,
-              week_number=w_num)
+    my_export = export(data_frame=data_in,
+                       month_number=m_num,
+                       week_day_start=week_sta_str,
+                       week_day_end=week_end_str,
+                       week_number=w_num)
 
-print(test)
+    print(my_export)

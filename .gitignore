@@ -127,3 +127,5 @@ dmypy.json
 /token_youtube_v3.pickle
 .idea/
 /test.py
+/tests.py
+/settings_nordvpn.txt

@@ -34,8 +34,8 @@ https://learndataanalysis.org/google-py-file-source-code/
 @file_name: data_collection.py
 @author: Dylan "dyl-m" Monfret
 
-Objective: Retrieve the number of views on YouTube to report on the audience of music through official channels. And
-this every week, every month, but also by tracks, by artists and by labels. 
+Objective: Retrieve YouTube's views, Soundcloud's plays and DJ support on 1001Tracklists to report on the audience of
+music through official channels. And this every week, every month, but also by tracks, by artists and by labels. 
 
 The tracks concerned can be found in the following Twitter thread: 
 https://twitter.com/Dyl_M_DJ/status/1347261399773421570
@@ -43,7 +43,7 @@ https://twitter.com/Dyl_M_DJ/status/1347261399773421570
 - Summary -
 
 1. Get basic informations from a dataframe.
-2. Retrieve data from diverse platform (YouTube and 1001Tracklists).
+2. Retrieve data from diverse platform (YouTube, 1001Tracklists and Soundcloud).
 3. Divide the data into different tables on different sheets for export to Excel.
 
 """
@@ -219,7 +219,10 @@ def export(data_frame, month_number, week_day_start, week_day_end, week_number):
     weelky_folder = "Weekly_Reports/Weekly_Data/"
     montly_folder = "Monthly_Reports/Monthly_Data/"
 
-    alltime_by_track, weeek_by_track, month_by_track = get_data(data_frame, month_number, week_day_start, week_day_end)
+    alltime_by_track = get_data(data_frame)
+
+    weeek_by_track = alltime_by_track.loc[
+        (alltime_by_track.Release_Date >= week_day_start) & (alltime_by_track.Release_Date <= week_day_end)]
 
     alltime_by_artist = data_by_artist(alltime_by_track)
     alltime_by_label = data_by_label(alltime_by_track)
@@ -227,20 +230,29 @@ def export(data_frame, month_number, week_day_start, week_day_end, week_number):
     week_by_artist = data_by_artist(weeek_by_track)
     week_by_label = data_by_label(weeek_by_track)
 
-    month_by_artist = data_by_artist(month_by_track)
-    month_by_label = data_by_label(month_by_track)
-
     alltime_by_track.Artist = alltime_by_track.Artist.apply(lambda x: ', '.join(x))
     weeek_by_track.Artist = weeek_by_track.Artist.apply(lambda x: ', '.join(x))
-    month_by_track.Artist = month_by_track.Artist.apply(lambda x: ', '.join(x))
 
     alltime_by_track.Label = alltime_by_track.Label.apply(lambda x: ', '.join(x))
     weeek_by_track.Label = weeek_by_track.Label.apply(lambda x: ', '.join(x))
-    month_by_track.Label = month_by_track.Label.apply(lambda x: ', '.join(x))
 
     export_alltime_part(alltime_by_track, alltime_by_artist, alltime_by_label)
     export_weekly_part(weeek_by_track, week_by_artist, week_by_label, weelky_folder, week_number)
-    export_monthly_part(month_by_track, month_by_artist, month_by_label, montly_folder, month_number)
+
+    for m__num in range(1, month_number + 1):
+        month_days = monthrange(2021, m__num)[1]
+        month_day_start = datetime(2021, m__num, 1)
+        month_day_end = datetime(2021, m__num, month_days)
+
+        month_by_track = alltime_by_track.loc[
+            (alltime_by_track.Release_Date >= month_day_start) & (alltime_by_track.Release_Date <= month_day_end)]
+
+        month_by_artist = data_by_artist(month_by_track)
+        month_by_label = data_by_label(month_by_track)
+
+        month_by_track.Artist = month_by_track.Artist.apply(lambda x: ', '.join(x))
+        month_by_track.Label = month_by_track.Label.apply(lambda x: ', '.join(x))
+        export_monthly_part(month_by_track, month_by_artist, month_by_label, montly_folder, month_number)
 
     return 'Data correctly exported :)'
 
@@ -405,17 +417,16 @@ def get_1001tracklists_data(dataframe):
     for idx, row in dataframe.iterrows():
 
         if pd.notna(row['1001Tracklists_ID']) and row['1001Tracklists_ID'] not in exception_1001T:
+            call = get_1001tracklists_track_data(row['1001Tracklists_ID'])
 
-            try:
-                data_1001tt = get_1001tracklists_track_data(row['1001Tracklists_ID'])
-
-            except IndexError:
+            if isinstance(call, str):
+                print(call)
                 rotate_VPN()
                 data_1001tt = get_1001tracklists_track_data(row['1001Tracklists_ID'])
+            else:
+                data_1001tt = call
 
-            dataframe.loc[idx, "1001T_Supports"], dataframe.loc[idx, "1001T_TotPlays"] = data_1001tt
-
-        sleep(1)
+        dataframe.loc[idx, "1001T_Supports"], dataframe.loc[idx, "1001T_TotPlays"] = data_1001tt
 
     terminate_VPN()
 
@@ -432,24 +443,33 @@ def get_1001tracklists_track_data(id_1001tl):
     print(id_1001tl)
 
     page_link = f'https://www.1001tracklists.com/track/{id_1001tl}/'
+
     page_response = requests.get(page_link, headers=Headers().generate())
 
     soup = BeautifulSoup(page_response.content, "html.parser")
+    if 'Your IP has been blocked due to abnormal use.' in soup.text:
+        return 'IP BLOCKED - Need Rotation'
 
-    supports = soup.find_all("span", class_='badge', title="total unique DJ supports")[0]
-    int_supp = int(clean_html(supports).replace('x', ''))
+    else:
 
-    try:
-        tot_play = soup.find_all("td", colspan="2", text=re.compile('Total Tracklist Plays:.'))[0]
-        int_play = int(clean_html(tot_play).replace('x', '').replace('Total Tracklist Plays: ', ''))
+        try:
+            supports = soup.find_all("span", class_='badge', title="total unique DJ supports")[0]
+            int_supp = int(clean_html(supports).replace('x', ''))
 
-    except IndexError:
-        int_play = int(0)
+        except IndexError:
+            int_supp = int(0)
 
-    return int_supp, int_play
+        try:
+            tot_play = soup.find_all("td", colspan="2", text=re.compile('Total Tracklist Plays:.'))[0]
+            int_play = int(clean_html(tot_play).replace('x', '').replace('Total Tracklist Plays: ', ''))
+
+        except IndexError:
+            int_play = int(0)
+
+        return int_supp, int_play
 
 
-def get_data(data_frame, month_number, week_day_start, week_day_end):
+def get_data(data_frame):
     """
     A function to get various data from music on these different platforms:
         - YouTube
@@ -463,24 +483,14 @@ def get_data(data_frame, month_number, week_day_start, week_day_end):
 
     :param data_frame: A dataframe listing all the information for each track (IDs of the different platforms, labels,
                        artists and release date).
-    :param month_number: Number of the month to be analyzed. (int)
-    :param week_day_start: First day of the week to be analyzed. (datetime)
-    :param week_day_end: Last day of the week to be analyzed. (datetime)
     :return: A complete dataset with needed statistics.
     """
-
-    month_days = monthrange(2021, month_number)[1]
-    month_day_start = datetime(2021, month_number, 1)
-    month_day_end = datetime(2021, month_number, month_days)
 
     data = get_youtube_data(data_frame)
     data = get_1001tracklists_data(data)
     data = get_soundcloud_data(data)
 
-    data_week = data.loc[(data.Release_Date >= week_day_start) & (data.Release_Date <= week_day_end)]
-    data_month = data.loc[(data.Release_Date >= month_day_start) & (data.Release_Date <= month_day_end)]
-
-    return data, data_week, data_month
+    return data
 
 
 def get_soundcloud_data(data_frame):

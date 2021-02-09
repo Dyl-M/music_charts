@@ -2,8 +2,6 @@
 
 import pandas as pd
 
-# pd.set_option('display.max_columns', None)
-
 """
 @file_name: report_writer.py
 @author: Dylan "dyl-m" Monfret
@@ -17,39 +15,6 @@ Objective: Automatically write report notes for future posts on Twitter.
 3. Write the results in .txt format.
 
 """
-
-""" - PREPARATORY ELEMENTS - """
-
-xls1 = pd.ExcelFile('2021 Charts OUT All Time.xlsx')
-xls2 = pd.ExcelFile('Weekly_Reports/Weekly_Data/2021 Charts Week 3.xlsx')
-# xls3 = pd.ExcelFile('Monthly_Reports/Monthly_Data/2021 Charts Month 1.xlsx')
-
-at_lst = [{"df": pd.read_excel(xls1, 'By_Track_YouTube'), 'stat': ["YouTube_Views"]},
-          {"df": pd.read_excel(xls1, 'By_Track_1001Tracklists'), 'stat': ['1001T_Supports', '1001T_TotPlays']},
-          {"df": pd.read_excel(xls1, 'By_Track_Soundcloud'), 'stat': ['Soundcloud_Plays']},
-          {"df": pd.read_excel(xls1, 'By_Artist_YouTube'), 'stat': ["YouTube_Views"]},
-          {"df": pd.read_excel(xls1, 'By_Artist_1001Tracklists'), 'stat': ['1001T_Supports', '1001T_TotPlays']},
-          {"df": pd.read_excel(xls1, 'By_Artist_Soundcloud'), 'stat': ['Soundcloud_Plays']},
-          {"df": pd.read_excel(xls1, 'By_Label_YouTube'), 'stat': ["YouTube_Views"]},
-          {"df": pd.read_excel(xls1, 'By_Label_1001Tracklists'), 'stat': ['1001T_Supports', '1001T_TotPlays']},
-          {"df": pd.read_excel(xls1, 'By_Label_Soundcloud'), 'stat': ['Soundcloud_Plays']}, ]
-
-we_lst = [{"df": pd.read_excel(xls2, 'By_Track_YouTube'), 'stat': ["YouTube_Views"]},
-          {"df": pd.read_excel(xls2, 'By_Track_1001Tracklists'), 'stat': ['1001T_Supports', '1001T_TotPlays']},
-          {"df": pd.read_excel(xls2, 'By_Track_Soundcloud'), 'stat': ['Soundcloud_Plays']},
-          {"df": pd.read_excel(xls2, 'By_Artist_YouTube'), 'stat': ["YouTube_Views"]},
-          {"df": pd.read_excel(xls2, 'By_Artist_1001Tracklists'), 'stat': ['1001T_Supports', '1001T_TotPlays']},
-          {"df": pd.read_excel(xls2, 'By_Artist_Soundcloud'), 'stat': ['Soundcloud_Plays']},
-          {"df": pd.read_excel(xls2, 'By_Label_YouTube'), 'stat': ["YouTube_Views"]},
-          {"df": pd.read_excel(xls2, 'By_Label_1001Tracklists'), 'stat': ['1001T_Supports', '1001T_TotPlays']},
-          {"df": pd.read_excel(xls2, 'By_Label_Soundcloud'), 'stat': ['Soundcloud_Plays']}, ]
-
-# mo_lst = [{"df": pd.read_excel(xls3, 'By_Track_YouTube'), 'stat': ["YouTube_Views"]},
-#           {"df": pd.read_excel(xls3, 'By_Track_1001Tracklists'), 'stat': ['1001T_TotPlays', '1001T_Supports']},
-#           {"df": pd.read_excel(xls3, 'By_Artist_YouTube'), 'stat': ["YouTube_Views"]},
-#           {"df": pd.read_excel(xls3, 'By_Artist_1001Tracklists'), 'stat': ['1001T_TotPlays', '1001T_Supports']},
-#           {"df": pd.read_excel(xls3, 'By_Label_YouTube'), 'stat': ["YouTube_Views"]},
-#           {"df": pd.read_excel(xls3, 'By_Label_1001Tracklists'), 'stat': ['1001T_TotPlays', '1001T_Supports']}]
 
 """ - LOCAL FUNCTIONS - """
 
@@ -95,14 +60,42 @@ def write_report(a_list):
     return string
 
 
-def make_report():
+def make_report(source_alltime, source_week, week_num):
+    at_xlsx = pd.ExcelFile(source_alltime)
+    we_xlsx = pd.ExcelFile(source_week)
+
+    at_lst = build_iterators(at_xlsx)
+    we_lst = build_iterators(we_xlsx)
+
     merged_list = build_list_we(we_lst, at_lst)
 
     report = write_report(merged_list)
     print(report)
 
-    with open("Weekly_Reports/Weekly_Notes/W3_Notes.txt.txt", "w", encoding='utf8') as text_file:
+    with open(f"Weekly_Reports/Weekly_Notes/W{week_num}_Notes.txt.txt", "w", encoding='utf8') as text_file:
         text_file.write(report)
 
 
+def build_iterators(xlsx_source):
+    prefix = ['By_Track_', 'By_Artist_', 'By_Label_']
+    suffix = [{'plat': 'YouTube', 'stats': ["YouTube_Views"]},
+              {'plat': '1001Tracklists', 'stats': ['1001T_Supports', '1001T_TotPlays']},
+              {'plat': 'Soundcloud', 'stats': ['Soundcloud_Plays']}]
+
+    list_from_source = list()
+
+    for pre in prefix:
+        for suf in suffix:
+            list_from_source.append({"df": pd.read_excel(xlsx_source, f'{pre}{suf["plat"]}'), 'stat': suf["stats"]})
+
+    return list_from_source
+
+
 " - MAIN PART -"
+
+if __name__ == '__main__':
+    w_num = 4
+    report_source_alltime = pd.ExcelFile('2021 Charts OUT All Time.xlsx')
+    report_source_week = pd.ExcelFile(f'Weekly_Reports/Weekly_Data/2021 Charts Week {w_num}.xlsx')
+
+    rw.make_report(report_source_alltime, report_source_week, w_num)

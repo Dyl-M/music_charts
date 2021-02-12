@@ -24,7 +24,7 @@ week_end_dt = datetime.strptime(week_end_str, '%Y-%m-%d')
 m_num = 2
 w_num = 4
 
-data_in = dc.find_alias(pd.read_excel("2021 Charts IN.xlsx"))
+data_in = dc.find_alias(pd.read_excel("../files/2021 Charts IN.xlsx"))
 
 my_export = dc.export(data_frame=data_in,
                       month_number=m_num,
@@ -34,7 +34,7 @@ my_export = dc.export(data_frame=data_in,
 
 print(my_export)
 
-report_source_alltime = pd.ExcelFile('2021 Charts OUT All Time.xlsx')
-report_source_week = pd.ExcelFile(f'Weekly_Reports/Weekly_Data/2021 Charts Week {w_num}.xlsx')
+report_source_alltime = pd.ExcelFile('../files/2021 Charts OUT All Time.xlsx')
+report_source_week = pd.ExcelFile(f'../weekly_reports/weekly_data/2021 Charts Week {w_num}.xlsx')
 
 rw.make_report(report_source_alltime, report_source_week, w_num)

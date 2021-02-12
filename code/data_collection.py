@@ -216,8 +216,10 @@ def export(data_frame, month_number, week_day_start, week_day_end, week_number):
     :return: A complete dataset with needed statistics.
     """
 
-    weelky_folder = "Weekly_Reports/Weekly_Data/"
-    montly_folder = "Monthly_Reports/Monthly_Data/"
+    # print(data_frame)
+
+    weelky_folder = "../weekly_reports/weekly_data/"
+    montly_folder = "../monthly_reports/monthly_data/"
 
     alltime_by_track = get_data(data_frame)
 
@@ -252,7 +254,7 @@ def export(data_frame, month_number, week_day_start, week_day_end, week_number):
 
         month_by_track.Artist = month_by_track.Artist.apply(lambda x: ', '.join(x))
         month_by_track.Label = month_by_track.Label.apply(lambda x: ', '.join(x))
-        export_monthly_part(month_by_track, month_by_artist, month_by_label, montly_folder, month_number)
+        export_monthly_part(month_by_track, month_by_artist, month_by_label, montly_folder, m__num)
 
     return 'Data correctly exported :)'
 
@@ -278,7 +280,7 @@ def export_alltime_part(df_by_track, df_by_artist, df_by_label):
                                                                                            df_by_artist,
                                                                                            df_by_label)
 
-    writer = pd.ExcelWriter('2021 Charts OUT All Time.xlsx', engine='xlsxwriter')
+    writer = pd.ExcelWriter('../files/2021 Charts OUT All Time.xlsx', engine='xlsxwriter')
 
     alltime_track_youtube.to_excel(writer, sheet_name='By_Track_YouTube', index=False)
     alltime_track_1001trl.to_excel(writer, sheet_name='By_Track_1001Tracklists', index=False)
@@ -426,7 +428,7 @@ def get_1001tracklists_data(dataframe):
             else:
                 data_1001tt = call
 
-        dataframe.loc[idx, "1001T_Supports"], dataframe.loc[idx, "1001T_TotPlays"] = data_1001tt
+            dataframe.loc[idx, "1001T_Supports"], dataframe.loc[idx, "1001T_TotPlays"] = data_1001tt
 
     terminate_VPN()
 
@@ -464,7 +466,7 @@ def get_1001tracklists_track_data(id_1001tl):
             int_play = int(clean_html(tot_play).replace('x', '').replace('Total Tracklist Plays: ', ''))
 
         except IndexError:
-            int_play = int(0)
+            int_play = int(1)
 
         return int_supp, int_play
 
@@ -486,11 +488,11 @@ def get_data(data_frame):
     :return: A complete dataset with needed statistics.
     """
 
-    data = get_youtube_data(data_frame)
-    data = get_1001tracklists_data(data)
-    data = get_soundcloud_data(data)
+    data1 = get_youtube_data(data_frame)
+    data2 = get_1001tracklists_data(data1)
+    data3 = get_soundcloud_data(data2)
 
-    return data
+    return data3
 
 
 def get_soundcloud_data(data_frame):
@@ -532,8 +534,9 @@ def get_soundcloud_data(data_frame):
     concat = pd.merge(df1, df2, left_index=True, right_index=True)
     plays_sum = concat.groupby("idx").sum()
 
-    final = pd.merge(data_frame, plays_sum, left_index=True, right_index=True).rename({'plays': "Soundcloud_Plays"},
-                                                                                      axis=1)
+    final = data_frame.join(plays_sum, how='outer').rename({'plays': "Soundcloud_Plays"}, axis=1)
+
+    final.Soundcloud_Plays = final.Soundcloud_Plays.fillna(0)
 
     return final
 
@@ -545,7 +548,7 @@ def get_youtube_data(data_frame):
     :param data_frame: A dataframe with the YouTube video IDs associated to each music.
     :return: The same dataframe but with the total number of views for each music.
     """
-    client_secret_file = 'code_secret_client.json'
+    client_secret_file = '../files/code_secret_client.json'
     api_name = 'YouTube'
     api_version = 'v3'
     scopes = ['https://www.googleapis.com/auth/youtube']
@@ -574,7 +577,12 @@ def get_youtube_data(data_frame):
 
     view_sum = concat.groupby("idx").sum()
 
-    final = pd.merge(data_frame, view_sum, left_index=True, right_index=True).rename({'views': "YouTube_Views"}, axis=1)
+    # print(data_frame)
+    # print(view_sum)
+
+    final = data_frame.join(view_sum, how='outer').rename({'views': "YouTube_Views"}, axis=1)
+
+    final.YouTube_Views = final.YouTube_Views.fillna(0)
 
     return final
 
@@ -607,7 +615,7 @@ if __name__ == "__main__":
     m_num = 1
     w_num = 3
 
-    data_in = find_alias(pd.read_excel("2021 Charts IN.xlsx"))
+    data_in = find_alias(pd.read_excel("../files/2021 Charts IN.xlsx"))
 
     my_export = export(data_frame=data_in,
                        month_number=m_num,

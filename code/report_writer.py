@@ -72,7 +72,7 @@ def make_report(source_alltime, source_week, week_num):
     report = write_report(merged_list)
     print(report)
 
-    with open(f"Weekly_Reports/Weekly_Notes/W{week_num}_Notes.txt.txt", "w", encoding='utf8') as text_file:
+    with open(f"../weekly_reports/weekly_notes/W{week_num}_Notes.txt.txt", "w", encoding='utf8') as text_file:
         text_file.write(report)
 
 
@@ -95,7 +95,7 @@ def build_iterators(xlsx_source):
 
 if __name__ == '__main__':
     w_num = 4
-    report_source_alltime = pd.ExcelFile('2021 Charts OUT All Time.xlsx')
-    report_source_week = pd.ExcelFile(f'Weekly_Reports/Weekly_Data/2021 Charts Week {w_num}.xlsx')
+    report_source_alltime = pd.ExcelFile('../files/2021 Charts OUT All Time.xlsx')
+    report_source_week = pd.ExcelFile(f'../weekly_reports/weekly_data/2021 Charts Week {w_num}.xlsx')
 
     rw.make_report(report_source_alltime, report_source_week, w_num)

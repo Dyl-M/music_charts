@@ -69,7 +69,8 @@ weak_alias = {"AvB": "Armin van Buuren", "Rising Star": "Armin van Buuren", "NLW
               "Maître Gims": "GIMS", "Muzzy": "MUZZ", "Richard Caddock": "Keepsake", "Joey Rumble": "Modern Revolt",
               "Michelle McKenna": "Michelle Platnum", "Ben Lepper": "Cloud Cage"}
 
-exception_1001T = {'sub71u5'}
+exception_1001T = {''}
+# exception_1001T = {'sub71u5'}
 
 """ - LOCAL FUNCTIONS - """
 

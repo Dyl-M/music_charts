@@ -3,27 +3,27 @@
 /// WEEK ///
 
             Artist       Track_Name       Label  YouTube_Views
-0  Porter Robinson  Look At The Sky     MOM+POP        1378335
-1          Kaskade           Closer  Monstercat         210865
-2        Rameses B          Samurai  Monstercat          62992
+0  Porter Robinson  Look At The Sky     MOM+POP        1493451
+1          Kaskade           Closer  Monstercat         225541
+2        Rameses B          Samurai  Monstercat          66816
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /// ALL TIME ///
 
                    Artist       Track_Name        Label  YouTube_Views
-0         Porter Robinson  Look At The Sky      MOM+POP        1378335
-1  Martin Garrix, Tove Lo         Pressure  STMPD RCRDS        1286202
-2     Arlow, Shiah Maisel               21          NCS        1052567
+0  Martin Garrix, Tove Lo         Pressure  STMPD RCRDS        1677653
+1         Porter Robinson  Look At The Sky      MOM+POP        1493451
+2     Arlow, Shiah Maisel               21          NCS        1064760
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /// WEEK ///
 
-                  Artist      Track_Name        Label  1001T_Supports  1001T_TotPlays
-0             Body Ocean  Once The Music  STMPD RCRDS              64              66
-1  Matt Nash, Lucas Marx        Midnight  STMPD RCRDS              48              53
-2                Kaskade          Closer   Monstercat               8              11
+                  Artist       Track_Name        Label  1001T_Supports  1001T_TotPlays
+0             Body Ocean   Once The Music  STMPD RCRDS              66              68
+1  Matt Nash, Lucas Marx         Midnight  STMPD RCRDS              50              55
+2        Porter Robinson  Look At The Sky      MOM+POP              10              11
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -31,26 +31,26 @@
 
        Artist             Track_Name        Label  1001T_Supports  1001T_TotPlays
 0    Malarkey  Shackles (Praise You)      HEXAGON             100             110
-1   DubVision                 Deeper  STMPD RCRDS              67              84
-2  Body Ocean         Once The Music  STMPD RCRDS              64              66
+1   DubVision                 Deeper  STMPD RCRDS              69              87
+2  Body Ocean         Once The Music  STMPD RCRDS              66              68
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /// WEEK ///
 
             Artist       Track_Name       Label  Soundcloud_Plays
-0  Porter Robinson  Look At The Sky     MOM+POP             79423
-1          Kaskade           Closer  Monstercat             51258
-2        Rameses B          Samurai  Monstercat             33843
+0  Porter Robinson  Look At The Sky     MOM+POP             83760
+1          Kaskade           Closer  Monstercat             53845
+2        Rameses B          Samurai  Monstercat             35965
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /// ALL TIME ///
 
                    Artist       Track_Name        Label  Soundcloud_Plays
-0         Porter Robinson  Look At The Sky      MOM+POP             79423
-1         TYNAN, Ace Aura             Stay   Monstercat             79217
-2  Martin Garrix, Tove Lo         Pressure  STMPD RCRDS             59108
+0         Porter Robinson  Look At The Sky      MOM+POP             83760
+1         TYNAN, Ace Aura             Stay   Monstercat             80614
+2  Martin Garrix, Tove Lo         Pressure  STMPD RCRDS             71763
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -59,30 +59,30 @@
 /// WEEK ///
 
             Artist  YouTube_Views
-0  Porter Robinson        1378335
-1          Kaskade         210865
-2        Rameses B          62992
+0  Porter Robinson        1493451
+1          Kaskade         225541
+2        Rameses B          66816
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /// ALL TIME ///
 
             Artist  YouTube_Views
-0  Porter Robinson        1378335
-1    Martin Garrix        1286202
-2          Tove Lo        1286202
-3            Arlow        1052567
-4     Shiah Maisel        1052567
+0    Martin Garrix        1677653
+1          Tove Lo        1677653
+2  Porter Robinson        1493451
+3            Arlow        1064760
+4     Shiah Maisel        1064760
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /// WEEK ///
 
-       Artist  1001T_Supports  1001T_TotPlays
-0  Body Ocean              64              66
-1  Lucas Marx              48              53
-2   Matt Nash              48              53
-3     Kaskade               8              11
+            Artist  1001T_Supports  1001T_TotPlays
+0       Body Ocean              66              68
+1       Lucas Marx              50              55
+2        Matt Nash              50              55
+3  Porter Robinson              10              11
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -90,28 +90,28 @@
 
        Artist  1001T_Supports  1001T_TotPlays
 0    Malarkey             100             110
-1   DubVision              67              84
-2  Body Ocean              64              66
+1   DubVision              69              87
+2  Body Ocean              66              68
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /// WEEK ///
 
             Artist  Soundcloud_Plays
-0  Porter Robinson             79423
-1          Kaskade             51258
-2        Rameses B             33843
+0  Porter Robinson             83760
+1          Kaskade             53845
+2        Rameses B             35965
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /// ALL TIME ///
 
             Artist  Soundcloud_Plays
-0  Porter Robinson             79423
-1         Ace Aura             79217
-2            TYNAN             79217
-3    Martin Garrix             59108
-4          Tove Lo             59108
+0  Porter Robinson             83760
+1         Ace Aura             80614
+2            TYNAN             80614
+3    Martin Garrix             71763
+4          Tove Lo             71763
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -120,54 +120,54 @@
 /// WEEK ///
 
          Label  YouTube_Views
-0      MOM+POP        1378335
-1   Monstercat         273857
-2  STMPD RCRDS          62600
+0      MOM+POP        1493451
+1   Monstercat         292357
+2  STMPD RCRDS          65652
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /// ALL TIME ///
 
          Label  YouTube_Views
-0          NCS        1877172
-1  STMPD RCRDS        1741473
-2      MOM+POP        1378335
+0  STMPD RCRDS        2151524
+1          NCS        1898546
+2      MOM+POP        1493451
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /// WEEK ///
 
          Label  1001T_Supports  1001T_TotPlays
-0  STMPD RCRDS             112             119
-1   Monstercat               8              11
-2      MOM+POP               8               9
+0  STMPD RCRDS             116             123
+1      MOM+POP              10              11
+2   Monstercat               9              12
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /// ALL TIME ///
 
                  Label  1001T_Supports  1001T_TotPlays
-0          STMPD RCRDS             335             370
-1              HEXAGON             204             219
-2  Revealed Recordings             110             130
+0          STMPD RCRDS             360             398
+1              HEXAGON             205             220
+2  Revealed Recordings             113             133
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /// WEEK ///
 
          Label  Soundcloud_Plays
-0   Monstercat             85101
-1      MOM+POP             79423
-2  STMPD RCRDS              9444
+0   Monstercat             89810
+1      MOM+POP             83760
+2  STMPD RCRDS             10116
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /// ALL TIME ///
 
          Label  Soundcloud_Plays
-0   Monstercat            270043
-1  STMPD RCRDS            148461
-2      MOM+POP             79423
+0   Monstercat            282532
+1  STMPD RCRDS            167432
+2      MOM+POP             83760
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

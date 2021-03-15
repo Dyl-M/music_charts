@@ -1,0 +1,112 @@
+--- TRACKS ---
+
+/// WEEK ///
+
+                   Artist      Track_Name        Label  YouTube_Views
+0  Martin Garrix, Tove Lo        Pressure  STMPD RCRDS        4848413
+1                   Feint       Do Better   Monstercat         113806
+2      Bleu Clair, OOTORO  Beat Like This  STMPD RCRDS         102517
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// - NO CHANGE -
+
+                   Artist       Track_Name        Label  YouTube_Views
+0  Martin Garrix, Tove Lo         Pressure  STMPD RCRDS        4848413
+1         Porter Robinson  Look At The Sky      MOM+POP        2270050
+2     Arlow, Shiah Maisel               21          NCS        1171879
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+                   Artist      Track_Name        Label  1001T_Supports  1001T_TotPlays
+0      Bleu Clair, OOTORO  Beat Like This  STMPD RCRDS              85              95
+1             RetroVision     All About U      HEXAGON              68              82
+2  Martin Garrix, Tove Lo        Pressure  STMPD RCRDS              49              58
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+               Artist             Track_Name        Label  1001T_Supports  1001T_TotPlays
+0            Malarkey  Shackles (Praise You)      HEXAGON             101             118
+1          Body Ocean         Once The Music  STMPD RCRDS              88              93
+2  Bleu Clair, OOTORO         Beat Like This  STMPD RCRDS              85              95
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+                   Artist      Track_Name        Label  Soundcloud_Plays
+0  Martin Garrix, Tove Lo        Pressure  STMPD RCRDS            178160
+1      Bleu Clair, OOTORO  Beat Like This  STMPD RCRDS             62740
+2                   Feint       Do Better   Monstercat             55338
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+                   Artist       Track_Name        Label  Soundcloud_Plays
+0  Martin Garrix, Tove Lo         Pressure  STMPD RCRDS            178160
+1         Porter Robinson  Look At The Sky      MOM+POP            128434
+2         TYNAN, Ace Aura             Stay   Monstercat             93840
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+--- LABELS ---
+
+/// WEEK ///
+
+         Label  YouTube_Views
+0  STMPD RCRDS        4972611
+1   Monstercat         198231
+2      HEXAGON          29523
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// - NO CHANGE - 
+
+         Label  YouTube_Views
+0  STMPD RCRDS        5588249
+1          NCS        3628992
+2      MOM+POP        2270050
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+         Label  1001T_Supports  1001T_TotPlays
+0  STMPD RCRDS             153             174
+1      HEXAGON              68              82
+2   Monstercat               3               6
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+            Label  1001T_Supports  1001T_TotPlays
+0     STMPD RCRDS             546             619
+1         HEXAGON             327             367
+2  Revealed Music             164             202
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+         Label  Soundcloud_Plays
+0  STMPD RCRDS            255246
+1   Monstercat             96848
+2      HEXAGON             19677
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+         Label  Soundcloud_Plays
+0   Monstercat            409175
+1  STMPD RCRDS            360416
+2          NCS            141300
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+

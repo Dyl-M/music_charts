@@ -1,0 +1,176 @@
+--- TRACKS ---
+
+/// WEEK ///
+
+                 Artist         Track_Name               Label  YouTube_Views
+0   Tom Wilson, M.I.M.E  Run For Your Life                 NCS         946361
+1  insaneintherainmusic      Golden Battle                NONE          55126
+2         Showmain, 7en    Chasing The Sun  Future House Cloud           3981
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+                   Artist                                           Track_Name                            Label  YouTube_Views
+0  Martin Garrix, Tove Lo                                             Pressure                      STMPD RCRDS        6078009
+1         Porter Robinson                                      Look At The Sky                          MOM+POP        2631252
+2        Armin van Buuren  Turn The World Into A Dancefloor (ASOT 1000 Anthem)  A State Of Trance, Armada Music        1296610
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+                 Artist         Track_Name               Label  1001T_Supports  1001T_TotPlays
+0         Showmain, 7en    Chasing The Sun  Future House Cloud               0               0
+1  insaneintherainmusic      Golden Battle                NONE               0               0
+2   Tom Wilson, M.I.M.E  Run For Your Life                 NCS               0               0
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+               Artist             Track_Name        Label  1001T_Supports  1001T_TotPlays
+0            Malarkey  Shackles (Praise You)      HEXAGON             100             120
+1  Bleu Clair, OOTORO         Beat Like This  STMPD RCRDS              95             106
+2          Body Ocean         Once The Music  STMPD RCRDS              94             100
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+                 Artist         Track_Name               Label  Soundcloud_Plays
+0   Tom Wilson, M.I.M.E  Run For Your Life                 NCS             49815
+1         Showmain, 7en    Chasing The Sun  Future House Cloud              2667
+2  insaneintherainmusic      Golden Battle                NONE                 0
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+                   Artist       Track_Name        Label  Soundcloud_Plays
+0  Martin Garrix, Tove Lo         Pressure  STMPD RCRDS            234959
+1         Porter Robinson  Look At The Sky      MOM+POP            147082
+2         TYNAN, Ace Aura             Stay   Monstercat             99991
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+--- ARTISTS ---
+
+/// WEEK ///
+
+                 Artist  YouTube_Views
+0               M.I.M.E         946361
+1            Tom Wilson         946361
+2  insaneintherainmusic          55126
+3                   7en           3981
+4              Showmain           3981
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+             Artist  YouTube_Views
+0     Martin Garrix        6078009
+1           Tove Lo        6078009
+2   Porter Robinson        2631252
+3  Armin van Buuren        1296610
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+                 Artist  1001T_Supports  1001T_TotPlays
+0                   7en               0               0
+1               M.I.M.E               0               0
+2              Showmain               0               0
+3            Tom Wilson               0               0
+4  insaneintherainmusic               0               0
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+        Artist  1001T_Supports  1001T_TotPlays
+0  RetroVision             106             124
+1     Malarkey             100             120
+2   Bleu Clair              95             106
+3       OOTORO              95             106
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+                 Artist  Soundcloud_Plays
+0               M.I.M.E             49815
+1            Tom Wilson             49815
+2                   7en              2667
+3              Showmain              2667
+4  insaneintherainmusic                 0
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+            Artist  Soundcloud_Plays
+0    Martin Garrix            234959
+1          Tove Lo            234959
+2  Porter Robinson            147082
+3            Chime            132432
+4      Franky Nuts            132432
+5         Oliverse            132432
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+--- LABELS ---
+
+/// WEEK ///
+
+                Label  YouTube_Views
+0                 NCS         946361
+1  Future House Cloud           3981
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+         Label  YouTube_Views
+0  STMPD RCRDS        6888154
+1          NCS        3953190
+2      MOM+POP        2631252
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+                Label  1001T_Supports  1001T_TotPlays
+0  Future House Cloud               0               0
+1                 NCS               0               0
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+            Label  1001T_Supports  1001T_TotPlays
+0     STMPD RCRDS             581             665
+1         HEXAGON             377             427
+2  Revealed Music             205             250
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+                Label  Soundcloud_Plays
+0                 NCS             49815
+1  Future House Cloud              2667
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+         Label  Soundcloud_Plays
+0   Monstercat            518419
+1  STMPD RCRDS            440645
+2      MOM+POP            147082
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+

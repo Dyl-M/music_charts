@@ -1,0 +1,98 @@
+--- TRACKS ---
+
+            Artist    Track_Name        Label  YouTube_Views
+0           Aspyer      Symphony  STMPD RCRDS          91569
+1  TYNAN, Ace Aura          Stay   Monstercat          74236
+2    Julian Jordan  Big Bad Bass  STMPD RCRDS          62534
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+                       Artist      Track_Name     Label  YouTube_Views
+0         Arlow, Shiah Maisel              21       NCS         811712
+1                     Castion  Banger Machine       NCS         701178
+2  deadmau5, Wolfgang Gartner      Channel 43  mau5trap         575075
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            Artist    Track_Name        Label  1001T_TotPlays  1001T_Supports
+0          Mo Falk      I'm Back      HEXAGON              29              27
+1    Julian Jordan  Big Bad Bass  STMPD RCRDS              24              22
+2           Aspyer      Symphony  STMPD RCRDS              24              22
+3  TYNAN, Ace Aura          Stay   Monstercat               9               4
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+                            Artist             Track_Name                Label  1001T_TotPlays  1001T_Supports
+0                         Malarkey  Shackles (Praise You)              HEXAGON              82              79
+1                        DubVision                 Deeper          STMPD RCRDS              59              50
+2  Jaxxwell, Hardwell, Blasterjaxx           Bootshaus ID  Revealed Recordings              30              21
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+--- ARTISTS ---
+
+          Artist  YouTube_Views
+0         Aspyer          91569
+1       Ace Aura          74236
+2          TYNAN          74236
+3  Julian Jordan          62534
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+             Artist  YouTube_Views
+0             Arlow         811712
+1      Shiah Maisel         811712
+2           Castion         701178
+3  Wolfgang Gartner         575075
+4          deadmau5         575075
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+          Artist  1001T_TotPlays  1001T_Supports
+0        Mo Falk              29              27
+1         Aspyer              24              22
+2  Julian Jordan              24              22
+3       Ace Aura               9               4
+4          TYNAN               9               4
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        Artist  1001T_TotPlays  1001T_Supports
+0     Malarkey              82              79
+1    DubVision              59              50
+2  Blasterjaxx              30              21
+3     Hardwell              30              21
+4     Jaxxwell              30              21
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+--- LABELS ---
+
+         Label  YouTube_Views
+0  STMPD RCRDS         154103
+1   Monstercat          74236
+2      HEXAGON          13111
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+         Label  YouTube_Views
+0          NCS        1512890
+1     mau5trap         575075
+2  STMPD RCRDS         213259
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+         Label  1001T_TotPlays  1001T_Supports
+0  STMPD RCRDS              48              44
+1      HEXAGON              29              27
+2   Monstercat               9               4
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+                 Label  1001T_TotPlays  1001T_Supports
+0              HEXAGON             131             126
+1          STMPD RCRDS             110              97
+2  Revealed Recordings              55              45
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+

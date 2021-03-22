@@ -1,0 +1,186 @@
+--- TRACKS ---
+
+/// WEEK ///
+
+                            Artist                                Track_Name        Label  YouTube_Views
+0                            hayve                                 Red Light          NCS         797062
+1             insaneintherainmusic  Kass' Theme - Jazz Accordion Arrangement         NONE          91603
+2  Seth Hills, Vluarr, Lucas Ariel                               Calling Out  STMPD RCRDS          87524
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+                   Artist                                           Track_Name                            Label  YouTube_Views
+0  Martin Garrix, Tove Lo                                             Pressure                      STMPD RCRDS        5420798
+1         Porter Robinson                                      Look At The Sky                          MOM+POP        2443226
+2        Armin van Buuren  Turn The World Into A Dancefloor (ASOT 1000 Anthem)  A State Of Trance, Armada Music        1215313
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+                                   Artist                         Track_Name                            Label  1001T_Supports  1001T_TotPlays
+0         Seth Hills, Vluarr, Lucas Ariel                        Calling Out                      STMPD RCRDS              58              64
+1  Lost Frequencies, Mathieu Koss, Brooks  Don't Leave Me Now (Brooks Remix)  Found Frequencies, Armada Music              33              35
+2            Chime, Franky Nuts, Oliverse             On My Mind (Chime Mix)                         Disciple               3               3
+3            Chime, Franky Nuts, Oliverse                         Wanna Love                         Disciple               3               3
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// (NO CHANGE)
+
+               Artist             Track_Name        Label  1001T_Supports  1001T_TotPlays
+0            Malarkey  Shackles (Praise You)      HEXAGON             100             119
+1          Body Ocean         Once The Music  STMPD RCRDS              92              97
+2  Bleu Clair, OOTORO         Beat Like This  STMPD RCRDS              89             100
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+                         Artist              Track_Name     Label  Soundcloud_Plays
+0  Chime, Franky Nuts, Oliverse               Let Me Go  Disciple             51946
+1  Chime, Franky Nuts, Oliverse  On My Mind (Chime Mix)  Disciple             44765
+2                         hayve               Red Light       NCS             42338
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// (NO CHANGE)
+
+                   Artist       Track_Name        Label  Soundcloud_Plays
+0  Martin Garrix, Tove Lo         Pressure  STMPD RCRDS            206976
+1         Porter Robinson  Look At The Sky      MOM+POP            138148
+2         TYNAN, Ace Aura             Stay   Monstercat             96907
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+--- ARTISTS ---
+
+/// WEEK /// (REDO)
+
+                 Artist  YouTube_Views
+0                 hayve         797062
+1  insaneintherainmusic          91603
+2           Lucas Ariel          87524
+3            Seth Hills          87524
+4                Vluarr          87524
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// (REDO)
+
+             Artist  YouTube_Views
+0     Martin Garrix        5420798
+1           Tove Lo        5420798
+2   Porter Robinson        2443226
+3  Armin van Buuren        1215313
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK /// (REDO)
+
+             Artist  1001T_Supports  1001T_TotPlays
+0       Lucas Ariel              58              64
+1        Seth Hills              58              64
+2            Vluarr              58              64
+3            Brooks              33              35
+4  Lost Frequencies              33              35
+5      Mathieu Koss              33              35
+6             Chime               8               8
+7       Franky Nuts               8               8
+8          Oliverse               8               8
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+        Artist  1001T_Supports  1001T_TotPlays
+0     Malarkey             100             119
+1  RetroVision              94             112
+2   Body Ocean              92              97
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+        Artist  Soundcloud_Plays
+0        Chime            123710
+1  Franky Nuts            123710
+2     Oliverse            123710
+3        hayve             42338
+4  Lucas Ariel             22649
+5   Seth Hills             22649
+6       Vluarr             22649
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+            Artist  Soundcloud_Plays
+0    Martin Garrix            206976
+1          Tove Lo            206976
+2  Porter Robinson            138148
+3            Chime            123710
+4      Franky Nuts            123710
+5         Oliverse            123710
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+--- LABELS ---
+
+/// WEEK ///
+
+         Label  YouTube_Views
+0          NCS         797062
+1  STMPD RCRDS          87524
+2     Disciple          77624
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// (NO CHANGE)
+
+         Label  YouTube_Views
+0  STMPD RCRDS        6196972
+1          NCS        3804650
+2      MOM+POP        2443226
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+               Label  1001T_Supports  1001T_TotPlays
+0        STMPD RCRDS              58              64
+1       Armada Music              33              35
+2  Found Frequencies              33              35
+3           Disciple               8               8
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// (NO CHANGE)
+
+            Label  1001T_Supports  1001T_TotPlays
+0     STMPD RCRDS             563             640
+1         HEXAGON             370             418
+2  Revealed Music             183             223
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+         Label  Soundcloud_Plays
+0     Disciple            123710
+1          NCS             42338
+2  STMPD RCRDS             22649
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// (NO CHANGE)
+
+         Label  Soundcloud_Plays
+0   Monstercat            463464
+1  STMPD RCRDS            406018
+2          NCS            157565
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+

@@ -1,0 +1,188 @@
+--- TRACKS ---
+
+/// WEEK ///
+
+                   Artist                                            Track_Name                           Label  YouTube_Views
+0  Daft Punk, RetroVision  Harder, Better, Faster, Stronger (RetroVision Remix)                            NONE         167001
+1  Sagan, Heyem & Groozin                                               Dreamer                         HEXAGON          20473
+2     Kamix, WYKO, PJONAX                                           Without You  Revealed Music, Revealed Radar           3238
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+                   Artist                                           Track_Name                            Label  YouTube_Views
+0  Martin Garrix, Tove Lo                                             Pressure                      STMPD RCRDS        6671063
+1         Porter Robinson                                      Look At The Sky                          MOM+POP        2811551
+2        Armin van Buuren  Turn The World Into A Dancefloor (ASOT 1000 Anthem)  A State Of Trance, Armada Music        1395249
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+                   Artist                                            Track_Name                           Label  1001T_Supports  1001T_TotPlays
+0  Daft Punk, RetroVision  Harder, Better, Faster, Stronger (RetroVision Remix)                            NONE              38              45
+1  Sagan, Heyem & Groozin                                               Dreamer                         HEXAGON              34              36
+2     Kamix, WYKO, PJONAX                                           Without You  Revealed Music, Revealed Radar              11              15
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+               Artist             Track_Name        Label  1001T_Supports  1001T_TotPlays
+0            Malarkey  Shackles (Praise You)      HEXAGON             103             123
+1  Bleu Clair, OOTORO         Beat Like This  STMPD RCRDS             103             116
+2          Body Ocean         Once The Music  STMPD RCRDS              95             101
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+                   Artist   Track_Name                           Label  Soundcloud_Plays
+0  Sagan, Heyem & Groozin      Dreamer                         HEXAGON              8232
+1                 Polygon      Falling         Elevate Records, SHOGUN              2919
+2     Kamix, WYKO, PJONAX  Without You  Revealed Music, Revealed Radar              1434
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+                   Artist       Track_Name        Label  Soundcloud_Plays
+0  Martin Garrix, Tove Lo         Pressure  STMPD RCRDS            262083
+1         Porter Robinson  Look At The Sky      MOM+POP            155148
+2         TYNAN, Ace Aura             Stay   Monstercat            102906
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+--- ARTISTS ---
+
+/// WEEK ///
+
+            Artist  YouTube_Views
+0        Daft Punk         167001
+1      RetroVision         167001
+2  Heyem & Groozin          20473
+3            Sagan          20473
+4            Kamix           3238
+5           PJONAX           3238
+6             WYKO           3238
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+             Artist  YouTube_Views
+0     Martin Garrix        6671063
+1           Tove Lo        6671063
+2   Porter Robinson        2811551
+3  Armin van Buuren        1395249
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+            Artist  1001T_Supports  1001T_TotPlays
+0        Daft Punk              38              45
+1      RetroVision              38              45
+2  Heyem & Groozin              34              36
+3            Sagan              34              36
+4            Kamix              11              15
+5           PJONAX              11              15
+6             WYKO              11              15
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+        Artist  1001T_Supports  1001T_TotPlays
+0  RetroVision             112             134
+1     Malarkey             103             123
+2   Bleu Clair             103             116
+3       OOTORO             103             116
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+            Artist  Soundcloud_Plays
+0  Heyem & Groozin              8232
+1            Sagan              8232
+2          Polygon              2919
+3            Kamix              1434
+4           PJONAX              1434
+5             WYKO              1434
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+            Artist  Soundcloud_Plays
+0    Martin Garrix            262083
+1          Tove Lo            262083
+2            Chime            239114
+3  Porter Robinson            155148
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+--- LABELS ---
+
+/// WEEK ///
+
+             Label  YouTube_Views
+0          HEXAGON          20473
+1   Revealed Music           3238
+2   Revealed Radar           3238
+3  Elevate Records           2924
+4           SHOGUN           2924
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+         Label  YouTube_Views
+0  STMPD RCRDS        7512016
+1          NCS        4095160
+2      MOM+POP        2811551
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+             Label  1001T_Supports  1001T_TotPlays
+0          HEXAGON              34              36
+1   Revealed Music              11              15
+2   Revealed Radar              11              15
+3  Elevate Records               5               5
+4           SHOGUN               5               5
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+            Label  1001T_Supports  1001T_TotPlays
+0     STMPD RCRDS             609             701
+1         HEXAGON             392             448
+2  Revealed Music             214             262
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+             Label  Soundcloud_Plays
+0          HEXAGON              8232
+1  Elevate Records              2919
+2           SHOGUN              2919
+3   Revealed Music              1434
+4   Revealed Radar              1434
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+         Label  Soundcloud_Plays
+0   Monstercat            574694
+1  STMPD RCRDS            482490
+2          NCS            183956
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+

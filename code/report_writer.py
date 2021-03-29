@@ -72,7 +72,7 @@ def make_report(source_alltime, source_week, week_num):
     report = write_report(merged_list)
     print(report)
 
-    with open(f"../weekly_reports/weekly_notes/W{week_num}_Notes.txt.txt", "w", encoding='utf8') as text_file:
+    with open(f"../weekly_reports/weekly_notes/W{week_num}_Notes.txt", "w", encoding='utf8') as text_file:
         text_file.write(report)
 
 

@@ -1,0 +1,178 @@
+--- TRACKS ---
+
+/// WEEK ///
+
+                  Artist        Track_Name                                Label  YouTube_Views
+0  Blasterjaxx, Dr Phunk  Here Without You  Maxximize Records, Spinnin' Records         241893
+1                  Koven          Light Up                           Monstercat         132237
+2                  Ellis             Orbit                           Monstercat         106373
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+                   Artist                                           Track_Name                            Label  YouTube_Views
+0  Martin Garrix, Tove Lo                                             Pressure                      STMPD RCRDS        7856655
+1         Porter Robinson                                      Look At The Sky                          MOM+POP        3061973
+2        Armin van Buuren  Turn The World Into A Dancefloor (ASOT 1000 Anthem)  A State Of Trance, Armada Music        1566477
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+                               Artist        Track_Name                                Label  1001T_Supports  1001T_TotPlays
+0                               KAAZE  Midnight Runners                       Revealed Music              31              36
+1  Trilane, Charlie Ray, Jordan Grace         In Heaven                  Protocol Recordings              17              19
+2               Blasterjaxx, Dr Phunk  Here Without You  Maxximize Records, Spinnin' Records              15              36
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+               Artist             Track_Name        Label  1001T_Supports  1001T_TotPlays
+0  Bleu Clair, OOTORO         Beat Like This  STMPD RCRDS             113             130
+1            Malarkey  Shackles (Praise You)      HEXAGON             104             128
+2          Body Ocean         Once The Music  STMPD RCRDS              97             104
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+                  Artist        Track_Name                                Label  Soundcloud_Plays
+0                  Ellis             Orbit                           Monstercat             32220
+1                  Koven          Light Up                           Monstercat             25550
+2  Blasterjaxx, Dr Phunk  Here Without You  Maxximize Records, Spinnin' Records             17592
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+                   Artist       Track_Name        Label  Soundcloud_Plays
+0  Martin Garrix, Tove Lo         Pressure  STMPD RCRDS            304869
+1         Porter Robinson  Look At The Sky      MOM+POP            167041
+2         TYNAN, Ace Aura             Stay   Monstercat            107120
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+--- ARTISTS ---
+
+/// WEEK ///
+
+        Artist  YouTube_Views
+0  Blasterjaxx         241893
+1     Dr Phunk         241893
+2        Koven         132237
+3        Ellis         106373
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+            Artist  YouTube_Views
+0    Martin Garrix        7856655
+1          Tove Lo        7856655
+2  Porter Robinson        3061973
+3       Don Diablo        1950381
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+         Artist  1001T_Supports  1001T_TotPlays
+0         KAAZE              31              36
+1   Charlie Ray              17              19
+2  Jordan Grace              17              19
+3       Trilane              17              19
+4   Blasterjaxx              15              36
+5      Dr Phunk              15              36
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+       Artist  1001T_Supports  1001T_TotPlays
+0    Malarkey             194             234
+1  Don Diablo             143             168
+2        NUZB             123             142
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+        Artist  Soundcloud_Plays
+0        Ellis             32220
+1        Koven             25550
+2  Blasterjaxx             17592
+3     Dr Phunk             17592
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+            Artist  Soundcloud_Plays
+0    Martin Garrix            304869
+1          Tove Lo            304869
+2            Chime            266480
+3  Porter Robinson            167041
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+--- LABELS ---
+
+/// WEEK ///
+
+               Label  YouTube_Views
+0  Maxximize Records         241893
+1   Spinnin' Records         241893
+2         Monstercat         238610
+3         Elev8Music          91737
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+         Label  YouTube_Views
+0  STMPD RCRDS        8955543
+1          NCS        4867209
+2      MOM+POP        3061973
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+                 Label  1001T_Supports  1001T_TotPlays
+0       Revealed Music              31              36
+1  Protocol Recordings              17              19
+2    Maxximize Records              15              36
+3     Spinnin' Records              15              36
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+            Label  1001T_Supports  1001T_TotPlays
+0     STMPD RCRDS             782             912
+1         HEXAGON             538             626
+2  Revealed Music             218             269
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+               Label  Soundcloud_Plays
+0         Monstercat             57770
+1  Maxximize Records             17592
+2   Spinnin' Records             17592
+3         Elev8Music             13705
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+         Label  Soundcloud_Plays
+0   Monstercat            727888
+1  STMPD RCRDS            597387
+2          NCS            212848
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+

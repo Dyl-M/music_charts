@@ -20,7 +20,7 @@ Objective: Automatically write report notes for future posts on Twitter.
 
 
 def build_list_we(lst1, lst2):
-    return_lst = list()
+    return_lst = []
     for e1, e2 in zip(lst1, lst2):
         return_lst.append(e1)
         return_lst.append(e2)
@@ -82,7 +82,7 @@ def build_iterators(xlsx_source):
               {'plat': '1001Tracklists', 'stats': ['1001T_Supports', '1001T_TotPlays']},
               {'plat': 'Soundcloud', 'stats': ['Soundcloud_Plays']}]
 
-    list_from_source = list()
+    list_from_source = []
 
     for pre in prefix:
         for suf in suffix:

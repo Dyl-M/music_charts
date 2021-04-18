@@ -35,6 +35,7 @@ my_export = dc.export(data_frame=data_in,
 print(my_export)
 
 report_source_alltime = pd.ExcelFile('../files/2021 Charts OUT All Time.xlsx')
-report_source_week = pd.ExcelFile(f'../weekly_reports/weekly_data/2021 Charts Week {w_num}.xlsx')
+report_source_week = pd.ExcelFile(
+    f'../weekly_reports/weekly_data/2021 Charts Week {w_num}.xlsx')
 
 rw.make_report(report_source_alltime, report_source_week, w_num)

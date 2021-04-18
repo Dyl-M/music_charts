@@ -36,9 +36,9 @@ the following link : https://learndataanalysis.org/google-py-file-source-code/
 
 Objective: Retrieve YouTube's views, Soundcloud's plays and DJ support on 1001Tracklists
 to report on the audience of music through official channels. And this every week, every
-month, but also by tracks, by artists and by labels. 
+month, but also by tracks, by artists and by labels.
 
-The tracks concerned can be found in the following Twitter thread: 
+The tracks concerned can be found in the following Twitter thread:
 https://twitter.com/Dyl_M_DJ/status/1347261399773421570
 
 - Summary -

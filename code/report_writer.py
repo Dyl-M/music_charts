@@ -97,7 +97,7 @@ def build_iterators(xlsx_source):
     for pre in prefix:
         for suf in suffix:
             list_from_source.append(
-                {"df": pd.read_excel(xlsx_source,f'{pre}{suf["plat"]}'),
+                {"df": pd.read_excel(xlsx_source, f'{pre}{suf["plat"]}'),
                  'stat': suf["stats"]})
 
     return list_from_source

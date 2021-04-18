@@ -490,31 +490,29 @@ def get_1001tracklists_track_data(id_1001tl):
     if 'Your IP has been blocked due to abnormal use.' in soup.text:
         return 'IP BLOCKED - Need Rotation'
 
-    else:
+    try:
+        supports = soup.find_all("span",
+                                 class_='badge',
+                                 title="total unique DJ supports")[0]
 
-        try:
-            supports = soup.find_all("span",
-                                     class_='badge',
-                                     title="total unique DJ supports")[0]
+        int_supp = int(clean_html(supports).replace('x', ''))
 
-            int_supp = int(clean_html(supports).replace('x', ''))
+    except IndexError:
+        int_supp = int(0)
 
-        except IndexError:
-            int_supp = int(0)
+    try:
+        tot_play = soup.find_all("td",
+                                 colspan="2",
+                                 text=re.compile('Total Tracklist Plays:.'))[0]
 
-        try:
-            tot_play = soup.find_all("td",
-                                     colspan="2",
-                                     text=re.compile('Total Tracklist Plays:.'))[0]
+        int_play = int(clean_html(tot_play)
+                       .replace('x', '')
+                       .replace('Total Tracklist Plays: ', ''))
 
-            int_play = int(clean_html(tot_play)
-                           .replace('x', '')
-                           .replace('Total Tracklist Plays: ', ''))
+    except IndexError:
+        int_play = int(1)
 
-        except IndexError:
-            int_play = int(1)
-
-        return int_supp, int_play
+    return int_supp, int_play
 
 
 def get_data(data_frame):

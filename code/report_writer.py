@@ -47,13 +47,22 @@ def write_report(a_list):
         cpt += 1
 
         if len(df["stat"]) == 1:
-            grb = int(
-                df["df"].groupby(df["stat"]).count().sort_values(by=df["stat"], ascending=False).head(3).sum().mean())
+            grb = int(df["df"]
+                      .groupby(df["stat"])
+                      .count()
+                      .sort_values(by=df["stat"], ascending=False)
+                      .head(3)
+                      .sum()
+                      .mean())
 
         else:
-            grb = int(
-                df["df"].groupby(df["stat"]).count().sort_values(by=df["stat"], ascending=[False, False]).head(
-                    3).sum().mean())
+            grb = int(df["df"]
+                      .groupby(df["stat"])
+                      .count()
+                      .sort_values(by=df["stat"], ascending=[False, False])
+                      .head(3)
+                      .sum()
+                      .mean())
 
         string += df["df"].head(grb).to_string() + '\n' * 2 + '/' * 115 + '\n' * 2
 
@@ -72,7 +81,8 @@ def make_report(source_alltime, source_week, week_num):
     report = write_report(merged_list)
     print(report)
 
-    with open(f"../weekly_reports/weekly_notes/W{week_num}_Notes.txt", "w", encoding='utf8') as text_file:
+    with open(f"../weekly_reports/weekly_notes/W{week_num}_Notes.txt", "w",
+              encoding='utf8') as text_file:
         text_file.write(report)
 
 
@@ -86,7 +96,9 @@ def build_iterators(xlsx_source):
 
     for pre in prefix:
         for suf in suffix:
-            list_from_source.append({"df": pd.read_excel(xlsx_source, f'{pre}{suf["plat"]}'), 'stat': suf["stats"]})
+            list_from_source.append(
+                {"df": pd.read_excel(xlsx_source,f'{pre}{suf["plat"]}'),
+                 'stat': suf["stats"]})
 
     return list_from_source
 
@@ -96,6 +108,7 @@ def build_iterators(xlsx_source):
 if __name__ == '__main__':
     w_num = 4
     report_source_alltime = pd.ExcelFile('../files/2021 Charts OUT All Time.xlsx')
-    report_source_week = pd.ExcelFile(f'../weekly_reports/weekly_data/2021 Charts Week {w_num}.xlsx')
+    report_source_week = pd.ExcelFile(
+        f'../weekly_reports/weekly_data/2021 Charts Week {w_num}.xlsx')
 
     make_report(report_source_alltime, report_source_week, w_num)

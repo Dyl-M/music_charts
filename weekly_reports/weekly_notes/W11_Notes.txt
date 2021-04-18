@@ -1,0 +1,175 @@
+--- TRACKS ---
+
+/// WEEK ///
+
+                    Artist  Track_Name                                Label  YouTube_Views
+0            Mike Williams   Get Dirty    Musical Freedom, Spinnin' Records         210570
+1  Blackcode, Jess Sarubbi       Scars  Maxximize Records, Spinnin' Records         148266
+2         Masayoshi Iimori  In My Soul                           Monstercat         101475
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+                   Artist                                           Track_Name                            Label  YouTube_Views
+0  Martin Garrix, Tove Lo                                             Pressure                      STMPD RCRDS        8850941
+1         Porter Robinson                                      Look At The Sky                          MOM+POP        3191731
+2        Armin van Buuren  Turn The World Into A Dancefloor (ASOT 1000 Anthem)  A State Of Trance, Armada Music        1677342
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+                    Artist Track_Name                                Label  1001T_Supports  1001T_TotPlays
+0           NUZB, Malarkey    Miss Me                          STMPD RCRDS              93             112
+1            Mike Williams  Get Dirty    Musical Freedom, Spinnin' Records              57              76
+2  Blackcode, Jess Sarubbi      Scars  Maxximize Records, Spinnin' Records              15              17
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+               Artist             Track_Name        Label  1001T_Supports  1001T_TotPlays
+0  Bleu Clair, OOTORO         Beat Like This  STMPD RCRDS             119             139
+1            Malarkey  Shackles (Praise You)      HEXAGON             104             128
+2          Body Ocean         Once The Music  STMPD RCRDS              97             104
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+                              Artist  Track_Name                  Label  Soundcloud_Plays
+0  Pixel Terror, ESPER, Isaiah Brown      Medusa             Monstercat             35697
+1                   Masayoshi Iimori  In My Soul             Monstercat             33107
+2           Chime, Dr. Ozi, Trinergy      Motion  Never Say Die Records             30225
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+                   Artist       Track_Name        Label  Soundcloud_Plays
+0  Martin Garrix, Tove Lo         Pressure  STMPD RCRDS            329613
+1         Porter Robinson  Look At The Sky      MOM+POP            172947
+2         TYNAN, Ace Aura             Stay   Monstercat            109057
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+--- ARTISTS ---
+
+/// WEEK ///
+
+             Artist  YouTube_Views
+0     Mike Williams         210570
+1         Blackcode         148266
+2      Jess Sarubbi         148266
+3  Masayoshi Iimori         101475
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+            Artist  YouTube_Views
+0    Martin Garrix        9737288
+1          Tove Lo        8850941
+2  Porter Robinson        3191731
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+          Artist  1001T_Supports  1001T_TotPlays
+0       Malarkey              93             112
+1           NUZB              93             112
+2  Mike Williams              57              76
+3      Blackcode              15              17
+4   Jess Sarubbi              15              17
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+       Artist  1001T_Supports  1001T_TotPlays
+0    Malarkey             197             240
+1  Don Diablo             159             191
+2        NUZB             127             149
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+             Artist  Soundcloud_Plays
+0             ESPER             35697
+1      Isaiah Brown             35697
+2      Pixel Terror             35697
+3  Masayoshi Iimori             33107
+4             Chime             30225
+5           Dr. Ozi             30225
+6          Trinergy             30225
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+          Artist  Soundcloud_Plays
+0  Martin Garrix            349414
+1        Tove Lo            329613
+2          Chime            278749
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+--- LABELS ---
+
+/// WEEK ///
+
+              Label  YouTube_Views
+0  Spinnin' Records         358836
+1   Musical Freedom         210570
+2        Monstercat         196575
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+         Label  YouTube_Views
+0  STMPD RCRDS       11047379
+1          NCS        5387117
+2      MOM+POP        3191731
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+              Label  1001T_Supports  1001T_TotPlays
+0       STMPD RCRDS              93             112
+1  Spinnin' Records              72              93
+2   Musical Freedom              57              76
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+            Label  1001T_Supports  1001T_TotPlays
+0     STMPD RCRDS             874            1032
+1         HEXAGON             556             653
+2  Revealed Music             224             279
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+                   Label  Soundcloud_Plays
+0             Monstercat             68804
+1       Spinnin' Records             34075
+2  Never Say Die Records             30225
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+         Label  Soundcloud_Plays
+0   Monstercat            796319
+1  STMPD RCRDS            683816
+2          NCS            243108
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+

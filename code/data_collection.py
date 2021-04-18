@@ -84,7 +84,7 @@ def api_get_videos_views(list_videos_ids, a_service):
     :return: a dictionary associating video id and views of said video.
     """
 
-    views = list()
+    views = []
     chunks50 = [list(sub_list) for sub_list in
                 np.array_split(np.array(list_videos_ids), len(list_videos_ids) // 50 + 1)]
 
@@ -505,8 +505,8 @@ def get_soundcloud_data(data_frame):
     """
 
     df = data_frame.fillna("NONE")
-    soundcloud_dict = dict()
-    tracks_plays = dict()
+    soundcloud_dict = {}
+    tracks_plays = {}
 
     for an_idx, a_row in df.iterrows():
         soundcloud_dict[a_row["Soundcloud_Link1"]] = [an_idx]
@@ -557,7 +557,7 @@ def get_youtube_data(data_frame):
     service = Create_Service(client_secret_file, api_name, api_version, scopes)
 
     df = data_frame.fillna("NONE")
-    youtube_dict = dict()
+    youtube_dict = {}
 
     for an_idx, a_row in df.iterrows():
         youtube_dict[a_row["YouTube_ID1"]] = [an_idx]

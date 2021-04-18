@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 
-import random
 import re
 from calendar import monthrange
 from datetime import datetime
@@ -15,6 +14,7 @@ from nordvpn_switcher import initialize_VPN, rotate_VPN, terminate_VPN
 
 from Google import Create_Service
 
+# import random
 # import shadow_useragent
 # from fake_useragent import UserAgent
 

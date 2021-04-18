@@ -233,11 +233,11 @@ def export(data_frame, month_number, week_day_start, week_day_end, week_number):
     week_by_artist = data_by_artist(weeek_by_track)
     week_by_label = data_by_label(weeek_by_track)
 
-    alltime_by_track.Artist = alltime_by_track.Artist.apply(lambda x: ', '.join(x))
-    weeek_by_track.Artist = weeek_by_track.Artist.apply(lambda x: ', '.join(x))
+    alltime_by_track.Artist = alltime_by_track.Artist.apply(', '.join)
+    weeek_by_track.Artist = weeek_by_track.Artist.apply(', '.join)
 
-    alltime_by_track.Label = alltime_by_track.Label.apply(lambda x: ', '.join(x))
-    weeek_by_track.Label = weeek_by_track.Label.apply(lambda x: ', '.join(x))
+    alltime_by_track.Label = alltime_by_track.Label.apply(', '.join)
+    weeek_by_track.Label = weeek_by_track.Label.apply(', '.join)
 
     export_alltime_part(alltime_by_track, alltime_by_artist, alltime_by_label)
     export_weekly_part(weeek_by_track, week_by_artist, week_by_label, weelky_folder, week_number)
@@ -253,8 +253,8 @@ def export(data_frame, month_number, week_day_start, week_day_end, week_number):
         month_by_artist = data_by_artist(month_by_track)
         month_by_label = data_by_label(month_by_track)
 
-        month_by_track.Artist = month_by_track.Artist.apply(lambda x: ', '.join(x))
-        month_by_track.Label = month_by_track.Label.apply(lambda x: ', '.join(x))
+        month_by_track.Artist = month_by_track.Artist.apply(', '.join)
+        month_by_track.Label = month_by_track.Label.apply(', '.join)
         export_monthly_part(month_by_track, month_by_artist, month_by_label, montly_folder, m__num)
 
     return 'Data correctly exported :)'

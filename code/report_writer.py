@@ -98,4 +98,4 @@ if __name__ == '__main__':
     report_source_alltime = pd.ExcelFile('../files/2021 Charts OUT All Time.xlsx')
     report_source_week = pd.ExcelFile(f'../weekly_reports/weekly_data/2021 Charts Week {w_num}.xlsx')
 
-    rw.make_report(report_source_alltime, report_source_week, w_num)
+    make_report(report_source_alltime, report_source_week, w_num)

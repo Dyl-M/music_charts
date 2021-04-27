@@ -1,0 +1,174 @@
+--- TRACKS ---
+
+/// WEEK ///
+
+          Artist             Track_Name                                Label  YouTube_Views
+0        Danimal                 Wolves  Maxximize Records, Spinnin' Records         118146
+1  Slippy, Fiora                 Zenith                           Monstercat          78779
+2        Mo Falk  Feel So Dug (VIP Mix)                   Future House Music          32019
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE - )
+
+                   Artist                                           Track_Name                            Label  YouTube_Views
+0  Martin Garrix, Tove Lo                                             Pressure                      STMPD RCRDS        9683556
+1         Porter Robinson                                      Look At The Sky                          MOM+POP        3402519
+2        Armin van Buuren  Turn The World Into A Dancefloor (ASOT 1000 Anthem)  A State Of Trance, Armada Music        1836064
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+          Artist             Track_Name                                Label  1001T_Supports  1001T_TotPlays
+0        Mo Falk  Feel So Dug (VIP Mix)                   Future House Music              15              16
+1        Danimal                 Wolves  Maxximize Records, Spinnin' Records              13              17
+2  Slippy, Fiora                 Zenith                           Monstercat               0               0
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// (CHANGE!)
+
+               Artist             Track_Name        Label  1001T_Supports  1001T_TotPlays
+0  Bleu Clair, OOTORO         Beat Like This  STMPD RCRDS             122             142
+1            Malarkey  Shackles (Praise You)      HEXAGON             104             128
+2          Don Diablo            Eyes Closed      HEXAGON             103             115
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+          Artist             Track_Name                                Label  Soundcloud_Plays
+0  Slippy, Fiora                 Zenith                           Monstercat             23203
+1        Danimal                 Wolves  Maxximize Records, Spinnin' Records             14091
+2        Mo Falk  Feel So Dug (VIP Mix)                   Future House Music              7300
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME ///
+
+                   Artist       Track_Name        Label  Soundcloud_Plays
+0  Martin Garrix, Tove Lo         Pressure  STMPD RCRDS            363422
+1         Porter Robinson  Look At The Sky      MOM+POP            198529
+2         TYNAN, Ace Aura             Stay   Monstercat            111656
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+--- ARTISTS ---
+
+/// WEEK ///
+
+    Artist  YouTube_Views
+0  Danimal         118146
+1    Fiora          78779
+2   Slippy          78779
+3  Mo Falk          32019
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE - )
+
+            Artist  YouTube_Views
+0    Martin Garrix       11362796
+1          Tove Lo        9683556
+2  Porter Robinson        3402519
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+    Artist  1001T_Supports  1001T_TotPlays
+0  Mo Falk              15              16
+1  Danimal              13              17
+2    Fiora               0               0
+3   Slippy               0               0
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE - )
+
+       Artist  1001T_Supports  1001T_TotPlays
+0    Malarkey             198             243
+1  Don Diablo             179             215
+2        NUZB             128             152
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+    Artist  Soundcloud_Plays
+0    Fiora             23203
+1   Slippy             23203
+2  Danimal             14091
+3  Mo Falk              7300
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE - )
+
+          Artist  Soundcloud_Plays
+0  Martin Garrix            409789
+1        Tove Lo            363422
+2          Chime            292804
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+--- LABELS ---
+
+/// WEEK ///
+
+                Label  YouTube_Views
+0   Maxximize Records         118146
+1    Spinnin' Records         118146
+2          Monstercat          78779
+3  Future House Music          32019
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE - )
+
+         Label  YouTube_Views
+0  STMPD RCRDS       12771767
+1          NCS        5726339
+2      MOM+POP        3402519
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+                Label  1001T_Supports  1001T_TotPlays
+0  Future House Music              15              16
+1   Maxximize Records              13              17
+2    Spinnin' Records              13              17
+3          Monstercat               0               0
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE - )
+
+            Label  1001T_Supports  1001T_TotPlays
+0     STMPD RCRDS             909            1072
+1         HEXAGON             580             683
+2  Revealed Music             284             363
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+                Label  Soundcloud_Plays
+0          Monstercat             23203
+1   Maxximize Records             14091
+2    Spinnin' Records             14091
+3  Future House Music              7300
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE - )
+
+         Label  Soundcloud_Plays
+0   Monstercat            863338
+1  STMPD RCRDS            771028
+2          NCS            265323
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+

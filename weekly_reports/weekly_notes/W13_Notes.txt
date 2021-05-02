@@ -1,0 +1,180 @@
+--- TRACKS ---
+
+/// WEEK ///
+
+             Artist                  Track_Name                              Label  YouTube_Views
+0     Tiësto, SWACQ  The Business (SWACQ Remix)  Musical Freedom, Atlantic Records         237199
+1        Don Diablo                 Eyes Closed                            HEXAGON         111340
+2  Dirty Palm, CRVN                       Alibi                               NONE          79043
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE - )
+
+                   Artist                                           Track_Name                            Label  YouTube_Views
+0  Martin Garrix, Tove Lo                                             Pressure                      STMPD RCRDS       10231109
+1         Porter Robinson                                      Look At The Sky                          MOM+POP        3500210
+2        Armin van Buuren  Turn The World Into A Dancefloor (ASOT 1000 Anthem)  A State Of Trance, Armada Music        1931359
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+                          Artist                                 Track_Name                              Label  1001T_Supports  1001T_TotPlays
+0                     Don Diablo                                Eyes Closed                            HEXAGON             113             129
+1                  Tiësto, SWACQ                 The Business (SWACQ Remix)  Musical Freedom, Atlantic Records              11              12
+2               Dirty Palm, CRVN                                      Alibi                               NONE               0               0
+3  Sia, David Guetta, Jordy Wess  Floating Through Space (Jordy Wess Remix)                               NONE               0               0
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// (CHANGE!)
+
+               Artist             Track_Name        Label  1001T_Supports  1001T_TotPlays
+0  Bleu Clair, OOTORO         Beat Like This  STMPD RCRDS             122             142
+1          Don Diablo            Eyes Closed      HEXAGON             113             129
+2            Malarkey  Shackles (Praise You)      HEXAGON             106             130
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+                          Artist                                 Track_Name                              Label  Soundcloud_Plays
+0                  Tiësto, SWACQ                 The Business (SWACQ Remix)  Musical Freedom, Atlantic Records             25053
+1               Dirty Palm, CRVN                                      Alibi                               NONE             12485
+2  Sia, David Guetta, Jordy Wess  Floating Through Space (Jordy Wess Remix)                               NONE              9169
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// (CHANGE!)
+
+                       Artist       Track_Name        Label  Soundcloud_Plays
+0      Martin Garrix, Tove Lo         Pressure  STMPD RCRDS            380486
+1             Porter Robinson  Look At The Sky      MOM+POP            210507
+2  deadmau5, Wolfgang Gartner       Channel 43     mau5trap            114343
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+--- ARTISTS ---
+
+/// WEEK ///
+
+       Artist  YouTube_Views
+0       SWACQ         237199
+1      Tiësto         237199
+2  Don Diablo         111340
+3        CRVN          79043
+4  Dirty Palm          79043
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE - )
+
+            Artist  YouTube_Views
+0    Martin Garrix       12160704
+1          Tove Lo       10231109
+2  Porter Robinson        3632547
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+         Artist  1001T_Supports  1001T_TotPlays
+0    Don Diablo             113             129
+1         SWACQ              11              12
+2        Tiësto              11              12
+3          CRVN               0               0
+4  David Guetta               0               0
+5    Dirty Palm               0               0
+6    Jordy Wess               0               0
+7           Sia               0               0
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// (CHANGE!)
+
+        Artist  1001T_Supports  1001T_TotPlays
+0     Malarkey             201             248
+1   Don Diablo             190             233
+2  RetroVision             157             188
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+         Artist  Soundcloud_Plays
+0         SWACQ             25053
+1        Tiësto             25053
+2          CRVN             12485
+3    Dirty Palm             12485
+4  David Guetta              9169
+5    Jordy Wess              9169
+6           Sia              9169
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE - )
+
+          Artist  Soundcloud_Plays
+0  Martin Garrix            436676
+1        Tove Lo            380486
+2          Chime            299795
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+--- LABELS ---
+
+/// WEEK ///
+
+              Label  YouTube_Views
+0  Atlantic Records         237199
+1   Musical Freedom         237199
+2           HEXAGON         111340
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE - )
+
+         Label  YouTube_Views
+0  STMPD RCRDS       13726594
+1          NCS        5860329
+2      MOM+POP        3632547
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+              Label  1001T_Supports  1001T_TotPlays
+0           HEXAGON             113             129
+1  Atlantic Records              11              12
+2   Musical Freedom              11              12
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE - )
+
+            Label  1001T_Supports  1001T_TotPlays
+0     STMPD RCRDS             966            1142
+1         HEXAGON             631             749
+2  Revealed Music             287             369
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+              Label  Soundcloud_Plays
+0  Atlantic Records             25053
+1   Musical Freedom             25053
+2           HEXAGON                 0
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE - )
+
+         Label  Soundcloud_Plays
+0   Monstercat            893203
+1  STMPD RCRDS            818095
+2          NCS            274879
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+

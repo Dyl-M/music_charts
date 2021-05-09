@@ -15,14 +15,14 @@ from datetime import datetime
 Do the whole execution process.
 """
 
-week_sta_str = "2021-03-29"
-week_end_str = "2021-04-04"
+week_sta_str = "2021-04-05"
+week_end_str = "2021-04-11"
 
 week_sta_dt = datetime.strptime(week_sta_str, '%Y-%m-%d')
 week_end_dt = datetime.strptime(week_end_str, '%Y-%m-%d')
 
-m_num = 4
-w_num = 13
+m_num = 5
+w_num = 14
 
 data_in = dc.find_alias(pd.read_excel("../files/2021 Charts IN.xlsx"))
 

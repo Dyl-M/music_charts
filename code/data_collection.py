@@ -483,7 +483,12 @@ def get_1001tracklists_track_data(id_1001tl):
 
     page_link = f'https://www.1001tracklists.com/track/{id_1001tl}/'
 
-    page_response = requests.get(page_link, headers=Headers().generate())
+    try:
+        page_response = requests.get(page_link, headers=Headers().generate())
+
+    except ConnectionError:
+        print("Retrying...")
+        page_response = requests.get(page_link, headers=Headers().generate())
 
     soup = BeautifulSoup(page_response.content, "html.parser")
 
@@ -492,7 +497,7 @@ def get_1001tracklists_track_data(id_1001tl):
 
     try:
         supports = soup.find_all("span",
-                                 class_='badge',
+                                 class_='badge spR',
                                  title="total unique DJ supports")[0]
 
         int_supp = int(clean_html(supports).replace('x', ''))
@@ -501,8 +506,8 @@ def get_1001tracklists_track_data(id_1001tl):
         int_supp = int(0)
 
     try:
-        tot_play = soup.find_all("td",
-                                 colspan="2",
+        tot_play = soup.find_all("div",
+                                 class_="c",
                                  text=re.compile('Total Tracklist Plays:.'))[0]
 
         int_play = int(clean_html(tot_play)
@@ -567,7 +572,8 @@ def get_soundcloud_data(data_frame):
         try:
             tracks_plays[track] = {'plays': soundcloud_scrapping(track)}
 
-        except ConnectionError:
+        except (ConnectionError, IndexError):
+            print('IP BLOCKED - Need Rotation')
             rotate_VPN()
             tracks_plays[track] = {'plays': soundcloud_scrapping(track)}
 
@@ -639,7 +645,14 @@ def get_youtube_data(data_frame):
 def soundcloud_scrapping(soundcloud_url):
     print(soundcloud_url)
     page_link = f'https://soundcloud.com/{soundcloud_url}/'
-    page_response = requests.get(page_link, headers=Headers().generate())
+
+    try:
+        page_response = requests.get(page_link, headers=Headers().generate())
+
+    except ConnectionError:
+        print("Retrying...")
+        page_response = requests.get(page_link, headers=Headers().generate())
+
     soup = BeautifulSoup(page_response.content, "html.parser")
 
     # print(soup)

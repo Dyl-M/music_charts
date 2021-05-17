@@ -1,0 +1,174 @@
+--- TRACKS ---
+
+/// WEEK ///
+
+                   Artist Track_Name           Label  YouTube_Views
+0  SICK INDIVIDUALS, EKKO      Flame  Revealed Music         190296
+1                    Exyl        Egg            NONE         140495
+2            Bad Computer   Paradise      Monstercat         124336
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+                          Artist       Track_Name                           Label  YouTube_Views
+0         Martin Garrix, Tove Lo         Pressure                     STMPD RCRDS       11372908
+1                Porter Robinson  Look At The Sky                         MOM+POP        3699176
+2  AREA21, Martin Garrix, Maejor         La La La  STMPD RCRDS, Hollywood Records        2336862
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+                   Artist     Track_Name           Label  1001T_Supports  1001T_TotPlays
+0     Aiobahn, Mick Mazoo  Never Go Back     STMPD RCRDS              72              88
+1  SICK INDIVIDUALS, EKKO          Flame  Revealed Music              38              44
+2                    Exyl            Egg            NONE               0               0
+3            Bad Computer       Paradise      Monstercat               0               0
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - CHANGE! - )
+
+               Artist             Track_Name        Label  1001T_Supports  1001T_TotPlays
+0          Don Diablo            Eyes Closed      HEXAGON             126             151
+1  Bleu Clair, OOTORO         Beat Like This  STMPD RCRDS             126             150
+2            Malarkey  Shackles (Praise You)      HEXAGON             106             130
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+                Artist     Track_Name        Label  Soundcloud_Plays
+0         Bad Computer       Paradise   Monstercat             23394
+1  Aiobahn, Mick Mazoo  Never Go Back  STMPD RCRDS             17466
+2                 Exyl            Egg         NONE             11902
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+                   Artist       Track_Name        Label  Soundcloud_Plays
+0  Martin Garrix, Tove Lo         Pressure  STMPD RCRDS            421412
+1         Porter Robinson  Look At The Sky      MOM+POP            229660
+2         Porter Robinson         Musician      MOM+POP            178507
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+--- ARTISTS ---
+
+/// WEEK ///
+
+             Artist  YouTube_Views
+0              EKKO         190296
+1  SICK INDIVIDUALS         190296
+2              Exyl         140495
+3      Bad Computer         124336
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+            Artist  YouTube_Views
+0    Martin Garrix       13709770
+1          Tove Lo       11372908
+2  Porter Robinson        5883199
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+             Artist  1001T_Supports  1001T_TotPlays
+0           Aiobahn              72              88
+1        Mick Mazoo              72              88
+2              EKKO              38              44
+3  SICK INDIVIDUALS              38              44
+4      Bad Computer               0               0
+5              Exyl               0               0
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - CHANGE! - )
+
+        Artist  1001T_Supports  1001T_TotPlays
+0   Don Diablo             205             259
+1     Malarkey             205             255
+2  RetroVision             179             215
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+         Artist  Soundcloud_Plays
+0  Bad Computer             23394
+1       Aiobahn             17466
+2    Mick Mazoo             17466
+3          Exyl             11902
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+            Artist  Soundcloud_Plays
+0    Martin Garrix            495306
+1  Porter Robinson            444002
+2          Tove Lo            421412
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+--- LABELS ---
+
+/// WEEK ///
+
+            Label  YouTube_Views
+0  Revealed Music         190296
+1      Monstercat         124336
+2     STMPD RCRDS          96570
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+         Label  YouTube_Views
+0  STMPD RCRDS       15410021
+1          NCS        6928911
+2      MOM+POP        5883199
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+            Label  1001T_Supports  1001T_TotPlays
+0     STMPD RCRDS              72              88
+1  Revealed Music              38              44
+2      Monstercat               0               0
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+            Label  1001T_Supports  1001T_TotPlays
+0     STMPD RCRDS            1039            1241
+1         HEXAGON             706             844
+2  Revealed Music             332             424
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+            Label  Soundcloud_Plays
+0      Monstercat             23394
+1     STMPD RCRDS             17466
+2  Revealed Music              9439
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+         Label  Soundcloud_Plays
+0   Monstercat           1035509
+1  STMPD RCRDS            919335
+2      MOM+POP            444002
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+

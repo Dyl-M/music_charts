@@ -1,0 +1,176 @@
+--- TRACKS ---
+
+/// WEEK ///
+
+                           Artist        Track_Name        Label  YouTube_Views
+0  SVRRIC, RUINDKID, Silent Child  Fall To My Grave          NCS         846256
+1                 Porter Robinson           Blossom      MOM+POP         210135
+2                           SWACQ           Pursuit  STMPD RCRDS         109275
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+                          Artist       Track_Name                           Label  YouTube_Views
+0         Martin Garrix, Tove Lo         Pressure                     STMPD RCRDS       11771992
+1                Porter Robinson  Look At The Sky                         MOM+POP        3787476
+2  AREA21, Martin Garrix, Maejor         La La La  STMPD RCRDS, Hollywood Records        2576309
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+                              Artist           Track_Name                   Label  1001T_Supports  1001T_TotPlays
+0                              SWACQ              Pursuit             STMPD RCRDS              52              57
+1  Adrian Fyrla, Tom Westy, R3JECTED              Collide  HEXAGON, GenerationHEX              25              27
+2                     BLK RSE, KAAZE  Silence (KAAZE Mix)          Revealed Music              19              23
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - CHANGE! - )
+
+               Artist      Track_Name        Label  1001T_Supports  1001T_TotPlays
+0          Don Diablo     Eyes Closed      HEXAGON             128             154
+1  Bleu Clair, OOTORO  Beat Like This  STMPD RCRDS             128             152
+2          Body Ocean  Once The Music  STMPD RCRDS             107             115
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+                           Artist        Track_Name        Label  Soundcloud_Plays
+0                 Porter Robinson           Blossom      MOM+POP             40305
+1  SVRRIC, RUINDKID, Silent Child  Fall To My Grave          NCS             39644
+2                           SWACQ           Pursuit  STMPD RCRDS             16435
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+                   Artist       Track_Name        Label  Soundcloud_Plays
+0  Martin Garrix, Tove Lo         Pressure  STMPD RCRDS            441639
+1         Porter Robinson  Look At The Sky      MOM+POP            236877
+2         Porter Robinson         Musician      MOM+POP            186217
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+--- ARTISTS ---
+
+/// WEEK ///
+
+            Artist  YouTube_Views
+0         RUINDKID         846256
+1           SVRRIC         846256
+2     Silent Child         846256
+3  Porter Robinson         210135
+4            SWACQ         109275
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+            Artist  YouTube_Views
+0    Martin Garrix       14578811
+1          Tove Lo       11771992
+2  Porter Robinson        6070277
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+         Artist  1001T_Supports  1001T_TotPlays
+0         SWACQ              52              57
+1  Adrian Fyrla              25              27
+2      R3JECTED              25              27
+3     Tom Westy              25              27
+4       BLK RSE              19              23
+5         KAAZE              19              23
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - CHANGE! - )
+
+        Artist  1001T_Supports  1001T_TotPlays
+0     Malarkey             248             305
+1   Don Diablo             210             265
+2  RetroVision             188             224
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+            Artist  Soundcloud_Plays
+0  Porter Robinson             40305
+1         RUINDKID             39644
+2           SVRRIC             39644
+3     Silent Child             39644
+4            SWACQ             16435
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+            Artist  Soundcloud_Plays
+0    Martin Garrix            525062
+1  Porter Robinson            463399
+2          Tove Lo            441639
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+--- LABELS ---
+
+/// WEEK ///
+
+         Label  YouTube_Views
+0          NCS         846256
+1      MOM+POP         210135
+2  STMPD RCRDS         109275
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+         Label  YouTube_Views
+0  STMPD RCRDS       16446746
+1          NCS        7348789
+2      MOM+POP        6070277
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+            Label  1001T_Supports  1001T_TotPlays
+0     STMPD RCRDS              52              57
+1   GenerationHEX              25              27
+2         HEXAGON              25              27
+3  Revealed Music              19              23
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+            Label  1001T_Supports  1001T_TotPlays
+0     STMPD RCRDS            1102            1322
+1         HEXAGON             767             911
+2  Revealed Music             348             447
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+         Label  Soundcloud_Plays
+0      MOM+POP             40305
+1          NCS             39644
+2  STMPD RCRDS             16435
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+         Label  Soundcloud_Plays
+0   Monstercat           1122201
+1  STMPD RCRDS            980571
+2      MOM+POP            463399
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+

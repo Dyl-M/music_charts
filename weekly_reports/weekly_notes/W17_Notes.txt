@@ -1,0 +1,168 @@
+--- TRACKS ---
+
+/// WEEK ///
+
+                       Artist         Track_Name        Label  YouTube_Views
+0  Matisse & Sadko, Alex Aris            Heal Me  STMPD RCRDS         130431
+1                       Janee   Can't Let You Go  STMPD RCRDS          81167
+2                 RetroVision  Whatever You Want      HEXAGON          32930
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+                          Artist       Track_Name                           Label  YouTube_Views
+0         Martin Garrix, Tove Lo         Pressure                     STMPD RCRDS       12118458
+1                Porter Robinson  Look At The Sky                         MOM+POP        3873509
+2  AREA21, Martin Garrix, Maejor         La La La  STMPD RCRDS, Hollywood Records        2828896
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+                       Artist         Track_Name        Label  1001T_Supports  1001T_TotPlays
+0                 RetroVision  Whatever You Want      HEXAGON              63              76
+1  Matisse & Sadko, Alex Aris            Heal Me  STMPD RCRDS              53              62
+2                       Janee   Can't Let You Go  STMPD RCRDS              23              28
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - CHANGE! - )
+
+               Artist      Track_Name        Label  1001T_Supports  1001T_TotPlays
+0  Bleu Clair, OOTORO  Beat Like This  STMPD RCRDS             130             155
+1          Don Diablo     Eyes Closed      HEXAGON             128             158
+2          Body Ocean  Once The Music  STMPD RCRDS             110             118
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+                       Artist         Track_Name        Label  Soundcloud_Plays
+0  Matisse & Sadko, Alex Aris            Heal Me  STMPD RCRDS             14543
+1                 RetroVision  Whatever You Want      HEXAGON             10499
+2                       Janee   Can't Let You Go  STMPD RCRDS             10327
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+                   Artist       Track_Name        Label  Soundcloud_Plays
+0  Martin Garrix, Tove Lo         Pressure  STMPD RCRDS            462874
+1         Porter Robinson  Look At The Sky      MOM+POP            243435
+2         Porter Robinson         Musician      MOM+POP            192709
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+--- ARTISTS ---
+
+/// WEEK ///
+
+            Artist  YouTube_Views
+0        Alex Aris         130431
+1  Matisse & Sadko         130431
+2            Janee          81167
+3      RetroVision          32930
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+            Artist  YouTube_Views
+0    Martin Garrix       15662858
+1          Tove Lo       12118458
+2  Porter Robinson        6247325
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+            Artist  1001T_Supports  1001T_TotPlays
+0      RetroVision              63              76
+1        Alex Aris              53              62
+2  Matisse & Sadko              53              62
+3            Janee              23              28
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+        Artist  1001T_Supports  1001T_TotPlays
+0     Malarkey             252             314
+1   Don Diablo             232             297
+2  RetroVision             192             229
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+            Artist  Soundcloud_Plays
+0        Alex Aris             14543
+1  Matisse & Sadko             14543
+2      RetroVision             10499
+3            Janee             10327
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+            Artist  Soundcloud_Plays
+0    Martin Garrix            562160
+1  Porter Robinson            480096
+2          Tove Lo            462874
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+--- LABELS ---
+
+/// WEEK ///
+
+         Label  YouTube_Views
+0  STMPD RCRDS         211598
+1      HEXAGON          32930
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+         Label  YouTube_Views
+0  STMPD RCRDS       17594250
+1          NCS        7900756
+2      MOM+POP        6247325
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+         Label  1001T_Supports  1001T_TotPlays
+0  STMPD RCRDS              76              90
+1      HEXAGON              63              76
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+            Label  1001T_Supports  1001T_TotPlays
+0     STMPD RCRDS            1122            1361
+1         HEXAGON             808             967
+2  Revealed Music             386             492
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+         Label  Soundcloud_Plays
+0  STMPD RCRDS             24870
+1      HEXAGON             10499
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+         Label  Soundcloud_Plays
+0   Monstercat           1216404
+1  STMPD RCRDS           1041155
+2      MOM+POP            480096
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+

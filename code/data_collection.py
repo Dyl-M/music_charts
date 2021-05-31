@@ -486,8 +486,9 @@ def get_1001tracklists_track_data(id_1001tl):
     try:
         page_response = requests.get(page_link, headers=Headers().generate())
 
-    except ConnectionError:
+    except requests.exceptions.ConnectionError:
         print("Retrying...")
+        sleep(5)
         page_response = requests.get(page_link, headers=Headers().generate())
 
     soup = BeautifulSoup(page_response.content, "html.parser")
@@ -649,8 +650,9 @@ def soundcloud_scrapping(soundcloud_url):
     try:
         page_response = requests.get(page_link, headers=Headers().generate())
 
-    except ConnectionError:
+    except requests.exceptions.ConnectionError:
         print("Retrying...")
+        sleep(5)
         page_response = requests.get(page_link, headers=Headers().generate())
 
     soup = BeautifulSoup(page_response.content, "html.parser")

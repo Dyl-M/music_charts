@@ -1,0 +1,174 @@
+--- TRACKS ---
+
+/// WEEK ///
+
+                        Artist          Track_Name       Label  YouTube_Views
+0  Don Diablo, Jordan Mackampa   Through The Storm     HEXAGON         762037
+1           Crankdat, JT Roach  Better Without You  Monstercat          87903
+2    Tokyo Machine, Saxsquatch             CANTINA        NONE          85460
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+                          Artist       Track_Name                           Label  YouTube_Views
+0         Martin Garrix, Tove Lo         Pressure                     STMPD RCRDS       12353908
+1                Porter Robinson  Look At The Sky                         MOM+POP        3928448
+2  AREA21, Martin Garrix, Maejor         La La La  STMPD RCRDS, Hollywood Records        3053284
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+                        Artist         Track_Name            Label  1001T_Supports  1001T_TotPlays
+0               Cheyenne Giles        Jump Around  Musical Freedom             100             128
+1                     Malarkey            Rejoice          HEXAGON              46              50
+2  Don Diablo, Jordan Mackampa  Through The Storm          HEXAGON              21              28
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+               Artist      Track_Name        Label  1001T_Supports  1001T_TotPlays
+0  Bleu Clair, OOTORO  Beat Like This  STMPD RCRDS             135             160
+1          Don Diablo     Eyes Closed      HEXAGON             130             161
+2          Body Ocean  Once The Music  STMPD RCRDS             111             120
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+                      Artist          Track_Name            Label  Soundcloud_Plays
+0         Crankdat, JT Roach  Better Without You       Monstercat             53328
+1             Cheyenne Giles         Jump Around  Musical Freedom             18788
+2  Tokyo Machine, Saxsquatch             CANTINA             NONE             13794
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+                   Artist       Track_Name        Label  Soundcloud_Plays
+0  Martin Garrix, Tove Lo         Pressure  STMPD RCRDS            476951
+1         Porter Robinson  Look At The Sky      MOM+POP            247892
+2         Porter Robinson         Musician      MOM+POP            196983
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+--- ARTISTS ---
+
+/// WEEK ///
+
+            Artist  YouTube_Views
+0       Don Diablo         762037
+1  Jordan Mackampa         762037
+2         Crankdat          87903
+3         JT Roach          87903
+4       Saxsquatch          85460
+5    Tokyo Machine          85460
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+            Artist  YouTube_Views
+0    Martin Garrix       16395710
+1          Tove Lo       12353908
+2  Porter Robinson        6360678
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+            Artist  1001T_Supports  1001T_TotPlays
+0   Cheyenne Giles             100             128
+1         Malarkey              46              50
+2       Don Diablo              21              28
+3  Jordan Mackampa              21              28
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+        Artist  1001T_Supports  1001T_TotPlays
+0     Malarkey             256             319
+1   Don Diablo             235             303
+2  RetroVision             194             234
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+           Artist  Soundcloud_Plays
+0        Crankdat             53328
+1        JT Roach             53328
+2  Cheyenne Giles             18788
+3      Saxsquatch             13794
+4   Tokyo Machine             13794
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+            Artist  Soundcloud_Plays
+0    Martin Garrix            590539
+1  Porter Robinson            490971
+2          Tove Lo            476951
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+--- LABELS ---
+
+/// WEEK ///
+
+             Label  YouTube_Views
+0          HEXAGON         786645
+1       Monstercat          87903
+2  Musical Freedom          11546
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+         Label  YouTube_Views
+0  STMPD RCRDS       18363598
+1          NCS        8114185
+2      MOM+POP        6360678
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+             Label  1001T_Supports  1001T_TotPlays
+0  Musical Freedom             100             128
+1          HEXAGON              67              78
+2       Monstercat               2               3
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+            Label  1001T_Supports  1001T_TotPlays
+0     STMPD RCRDS            1149            1401
+1         HEXAGON             815             980
+2  Revealed Music             390             498
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+             Label  Soundcloud_Plays
+0       Monstercat             53328
+1  Musical Freedom             18788
+2          HEXAGON              3911
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+         Label  Soundcloud_Plays
+0   Monstercat           1265342
+1  STMPD RCRDS           1085652
+2      MOM+POP            490971
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+

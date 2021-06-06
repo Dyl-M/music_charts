@@ -449,7 +449,7 @@ def get_1001tracklists_data(dataframe):
     dataframe["1001T_TotPlays"] = 0
     dataframe["1001T_Supports"] = 0
 
-    initialize_VPN(save=1, area_input=['complete rotation'])
+    initialize_VPN(save=1, area_input=['random countries europe 20'])
 
     for idx, row in dataframe.iterrows():
 
@@ -479,44 +479,52 @@ def get_1001tracklists_track_data(id_1001tl):
     :param id_1001tl: 1001Tracklists Track ID.
     :return: a list [Unique DJ Supports, Plays]
     """
+
+    int_supp, int_play = (0, 0)
+
     print(id_1001tl)
 
     page_link = f'https://www.1001tracklists.com/track/{id_1001tl}/'
 
-    try:
-        page_response = requests.get(page_link, headers=Headers().generate())
+    success = False
 
-    except requests.exceptions.ConnectionError:
-        print("Retrying...")
-        sleep(5)
-        page_response = requests.get(page_link, headers=Headers().generate())
+    while not success:
 
-    soup = BeautifulSoup(page_response.content, "html.parser")
+        try:
+            page_response = requests.get(page_link, headers=Headers().generate())
 
-    if 'Your IP has been blocked due to abnormal use.' in soup.text:
-        return 'IP BLOCKED - Need Rotation'
+            soup = BeautifulSoup(page_response.content, "html.parser")
 
-    try:
-        supports = soup.find_all("span",
-                                 class_='badge spR',
-                                 title="total unique DJ supports")[0]
+            if 'Your IP has been blocked due to abnormal use.' in soup.text:
+                return 'IP BLOCKED - Need Rotation'
 
-        int_supp = int(clean_html(supports).replace('x', ''))
+            try:
+                supports = soup.find_all("span",
+                                         class_='badge spR',
+                                         title="total unique DJ supports")[0]
 
-    except IndexError:
-        int_supp = int(0)
+                int_supp = int(clean_html(supports).replace('x', ''))
 
-    try:
-        tot_play = soup.find_all("div",
-                                 class_="c",
-                                 text=re.compile('Total Tracklist Plays:.'))[0]
+            except IndexError:
+                int_supp = int(0)
 
-        int_play = int(clean_html(tot_play)
-                       .replace('x', '')
-                       .replace('Total Tracklist Plays: ', ''))
+            try:
+                tot_play = soup.find_all("div",
+                                         class_="c",
+                                         text=re.compile('Total Tracklist Plays:.'))[0]
 
-    except IndexError:
-        int_play = int(1)
+                int_play = int(clean_html(tot_play)
+                               .replace('x', '')
+                               .replace('Total Tracklist Plays: ', ''))
+
+            except IndexError:
+                int_play = int(1)
+
+            success = True
+
+        except requests.exceptions.ConnectionError:
+            print("ConnectionError (from \"requests\"): Retrying in 5 sec...")
+            sleep(5)
 
     return int_supp, int_play
 
@@ -645,24 +653,24 @@ def get_youtube_data(data_frame):
 
 def soundcloud_scrapping(soundcloud_url):
     print(soundcloud_url)
+    plays = 0
+
     page_link = f'https://soundcloud.com/{soundcloud_url}/'
 
-    try:
-        page_response = requests.get(page_link, headers=Headers().generate())
+    success = False
 
-    except requests.exceptions.ConnectionError:
-        print("Retrying...")
-        sleep(5)
-        page_response = requests.get(page_link, headers=Headers().generate())
+    while not success:
 
-    soup = BeautifulSoup(page_response.content, "html.parser")
+        try:
+            page_response = requests.get(page_link, headers=Headers().generate())
+            soup = BeautifulSoup(page_response.content, "html.parser")
+            plays = str(soup.find_all("meta", property="soundcloud:play_count")[0])
+            plays = int(re.search('meta content="(.+?)"', plays).group(1))
+            success = True
 
-    # print(soup)
-
-    plays = str(soup.find_all("meta", property="soundcloud:play_count")[0])
-    plays = int(re.search('meta content="(.+?)"', plays).group(1))
-    # print(plays)
-    # sleep(random.gauss(3, 1))
+        except requests.exceptions.ConnectionError:
+            print("ConnectionError (from \"requests\"): retrying in 5 sec...")
+            sleep(5)
 
     return plays
 

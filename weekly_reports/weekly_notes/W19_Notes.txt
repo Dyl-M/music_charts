@@ -1,0 +1,181 @@
+--- TRACKS ---
+
+/// WEEK ///
+
+                         Artist     Track_Name                           Label  YouTube_Views
+0  SMACK, 22Bullets, Lovespeake    Ride Or Die              Future House Music          40999
+1    Julian Calor, She Is Jules       Deep End                      Monstercat          34488
+2        Basstian, Ivan Camacho  Make You Mine  Revealed Music, Revealed Radar          31674
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+                          Artist       Track_Name                           Label  YouTube_Views
+0         Martin Garrix, Tove Lo         Pressure                     STMPD RCRDS       12655542
+1                Porter Robinson  Look At The Sky                         MOM+POP        3997240
+2  AREA21, Martin Garrix, Maejor         La La La  STMPD RCRDS, Hollywood Records        3357020
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+                         Artist         Track_Name                           Label  1001T_Supports  1001T_TotPlays
+0  SMACK, 22Bullets, Lovespeake        Ride Or Die              Future House Music              60              68
+1        Basstian, Ivan Camacho      Make You Mine  Revealed Music, Revealed Radar              25              30
+2                         Faith  Giving Everything                         HEXAGON              21              22
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+               Artist      Track_Name        Label  1001T_Supports  1001T_TotPlays
+0  Bleu Clair, OOTORO  Beat Like This  STMPD RCRDS             140             166
+1          Don Diablo     Eyes Closed      HEXAGON             131             164
+2          Body Ocean  Once The Music  STMPD RCRDS             112             121
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+                       Artist          Track_Name                           Label  Soundcloud_Plays
+0          Bear Grillz, Nevve  Head In The Clouds                         Dim Mak             21270
+1      Basstian, Ivan Camacho       Make You Mine  Revealed Music, Revealed Radar             19728
+2  Julian Calor, She Is Jules            Deep End                      Monstercat             15383
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+                   Artist       Track_Name        Label  Soundcloud_Plays
+0  Martin Garrix, Tove Lo         Pressure  STMPD RCRDS            494458
+1         Porter Robinson  Look At The Sky      MOM+POP            253577
+2         Porter Robinson         Musician      MOM+POP            203357
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+--- ARTISTS ---
+
+/// WEEK ///
+
+         Artist  YouTube_Views
+0     22Bullets          40999
+1    Lovespeake          40999
+2         SMACK          40999
+3  Julian Calor          34488
+4  She Is Jules          34488
+5      Basstian          31674
+6  Ivan Camacho          31674
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+            Artist  YouTube_Views
+0    Martin Garrix       17265664
+1          Tove Lo       12655542
+2  Porter Robinson        6510332
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+         Artist  1001T_Supports  1001T_TotPlays
+0     22Bullets              60              68
+1    Lovespeake              60              68
+2         SMACK              60              68
+3      Basstian              25              30
+4  Ivan Camacho              25              30
+5         Faith              21              22
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+        Artist  1001T_Supports  1001T_TotPlays
+0     Malarkey             258             323
+1   Don Diablo             237             307
+2  RetroVision             197             237
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+         Artist  Soundcloud_Plays
+0   Bear Grillz             21270
+1         Nevve             21270
+2      Basstian             19728
+3  Ivan Camacho             19728
+4  Julian Calor             15383
+5  She Is Jules             15383
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+            Artist  Soundcloud_Plays
+0    Martin Garrix            627232
+1  Porter Robinson            506013
+2          Tove Lo            494458
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+--- LABELS ---
+
+/// WEEK ///
+
+                Label  YouTube_Views
+0  Future House Music          40999
+1          Monstercat          34488
+2      Revealed Music          31674
+3      Revealed Radar          31674
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+         Label  YouTube_Views
+0  STMPD RCRDS       19276264
+1          NCS        8345771
+2      MOM+POP        6510332
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+                Label  1001T_Supports  1001T_TotPlays
+0  Future House Music              60              68
+1      Revealed Music              25              30
+2      Revealed Radar              25              30
+3             HEXAGON              21              22
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - CHANGE! - )
+
+             Label  1001T_Supports  1001T_TotPlays
+0      STMPD RCRDS            1165            1426
+1          HEXAGON             825             992
+2  Musical Freedom             420             596
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+            Label  Soundcloud_Plays
+0         Dim Mak             21270
+1  Revealed Music             19728
+2  Revealed Radar             19728
+3      Monstercat             15383
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+         Label  Soundcloud_Plays
+0   Monstercat           1351767
+1  STMPD RCRDS           1142790
+2      MOM+POP            506013
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+

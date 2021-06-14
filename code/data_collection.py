@@ -452,20 +452,20 @@ def get_1001tracklists_data(dataframe):
     initialize_VPN(save=1, area_input=['random countries europe 20'])
 
     for idx, row in dataframe.iterrows():
+        print(f'{idx} | {row["1001Tracklists_ID"]} | {row["Track_Name"]}')
 
-        if pd.notna(row['1001Tracklists_ID']) and \
-                row['1001Tracklists_ID'] not in exception_1001T:
+        if pd.notna(row['1001Tracklists_ID']) and row['1001Tracklists_ID'] not in exception_1001T:
             call = get_1001tracklists_track_data(row['1001Tracklists_ID'])
 
             if isinstance(call, str):
                 print(call)
                 rotate_VPN()
                 data_1001tt = get_1001tracklists_track_data(row['1001Tracklists_ID'])
+
             else:
                 data_1001tt = call
 
-            dataframe.loc[idx, "1001T_Supports"], dataframe.loc[idx, "1001T_TotPlays"] \
-                = data_1001tt
+            dataframe.loc[idx, "1001T_Supports"], dataframe.loc[idx, "1001T_TotPlays"] = data_1001tt
 
     terminate_VPN()
 
@@ -479,13 +479,8 @@ def get_1001tracklists_track_data(id_1001tl):
     :param id_1001tl: 1001Tracklists Track ID.
     :return: a list [Unique DJ Supports, Plays]
     """
-
     int_supp, int_play = (0, 0)
-
-    print(id_1001tl)
-
     page_link = f'https://www.1001tracklists.com/track/{id_1001tl}/'
-
     success = False
 
     while not success:
@@ -576,15 +571,16 @@ def get_soundcloud_data(data_frame):
 
     initialize_VPN(save=1, area_input=['complete rotation'])
 
-    for track in tracks:
+    for idx, track_url in enumerate(tracks):
+        print(f'{idx} | {track_url}')
 
         try:
-            tracks_plays[track] = {'plays': soundcloud_scrapping(track)}
+            tracks_plays[track_url] = {'plays': soundcloud_scrapping(track_url)}
 
         except (ConnectionError, IndexError):
             print('IP BLOCKED - Need Rotation')
             rotate_VPN()
-            tracks_plays[track] = {'plays': soundcloud_scrapping(track)}
+            tracks_plays[track_url] = {'plays': soundcloud_scrapping(track_url)}
 
         sleep(1)
 
@@ -652,25 +648,36 @@ def get_youtube_data(data_frame):
 
 
 def soundcloud_scrapping(soundcloud_url):
-    print(soundcloud_url)
+    """
+
+    :param soundcloud_url:
+    :return:
+    """
     plays = 0
 
     page_link = f'https://soundcloud.com/{soundcloud_url}/'
 
     success = False
-
+    n_fail = 0
     while not success:
 
-        try:
-            page_response = requests.get(page_link, headers=Headers().generate())
-            soup = BeautifulSoup(page_response.content, "html.parser")
-            plays = str(soup.find_all("meta", property="soundcloud:play_count")[0])
-            plays = int(re.search('meta content="(.+?)"', plays).group(1))
-            success = True
+        if n_fail < 3:
 
-        except requests.exceptions.ConnectionError:
-            print("ConnectionError (from \"requests\"): retrying in 5 sec...")
-            sleep(5)
+            try:
+                page_response = requests.get(page_link, headers=Headers().generate())
+                soup = BeautifulSoup(page_response.content, "html.parser")
+                plays = str(soup.find_all("meta", property="soundcloud:play_count")[0])
+                plays = int(re.search('meta content="(.+?)"', plays).group(1))
+                success = True
+
+            except requests.exceptions.ConnectionError:
+                n_fail += 1
+                print("ConnectionError (from \"requests\"): retrying in 5 sec...")
+                sleep(5)
+
+        else:
+            print('IP SOFT-LOCKED - Need Rotation')
+            rotate_VPN()
 
     return plays
 

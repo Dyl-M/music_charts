@@ -1,0 +1,178 @@
+--- TRACKS ---
+
+/// WEEK ///
+
+                          Artist   Track_Name                           Label  YouTube_Views
+0  AREA21, Martin Garrix, Maejor         Pogo  STMPD RCRDS, Hollywood Records        2447620
+1                        Slushii     Valhalla                      Monstercat         908237
+2    Doctor Neiman, Micah Martin  Wait For Me                             NCS         794343
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - CHANGE! - )
+
+                          Artist       Track_Name                           Label  YouTube_Views
+0         Martin Garrix, Tove Lo         Pressure                     STMPD RCRDS       13024653
+1  AREA21, Martin Garrix, Maejor         La La La  STMPD RCRDS, Hollywood Records        4186662
+2                Porter Robinson  Look At The Sky                         MOM+POP        4089003
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+                                          Artist                           Track_Name             Label  1001T_Supports  1001T_TotPlays
+0  Steff da Campo, Olaf Blackwood, Robbie Mendez  State Of Mind (Robbie Mendez Remix)  Spinnin' Records              54              62
+1      Hardwell, Amba Shepherd, SICK INDIVIDUALS      Apollo (SICK INDIVIDUALS Remix)    Revealed Music              25              31
+2                Hardwell, Mitch Crown, Dr Phunk            Spaceman (Dr Phunk Remix)    Revealed Music              22              28
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - CHANGE! - )
+
+                              Artist      Track_Name                              Label  1001T_Supports  1001T_TotPlays
+0                 Bleu Clair, OOTORO  Beat Like This                        STMPD RCRDS             142             170
+1                         Don Diablo     Eyes Closed                            HEXAGON             132             166
+2  David Guetta, MORTEN, John Martin      Impossible  Musical Freedom, Spinnin' Records             118             180
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+                        Artist   Track_Name       Label  Soundcloud_Plays
+0                      Slushii     Valhalla  Monstercat             92261
+1  Doctor Neiman, Micah Martin  Wait For Me         NCS             47607
+2                  Dyro, Conro  Memory Bank  Monstercat             46249
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+                   Artist       Track_Name        Label  Soundcloud_Plays
+0  Martin Garrix, Tove Lo         Pressure  STMPD RCRDS            518041
+1         Porter Robinson  Look At The Sky      MOM+POP            260503
+2         Porter Robinson         Musician      MOM+POP            210702
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+--- ARTISTS ---
+
+/// WEEK ///
+
+          Artist  YouTube_Views
+0         AREA21        2447620
+1         Maejor        2447620
+2  Martin Garrix        2447620
+3        Slushii         908237
+4  Doctor Neiman         794343
+5   Micah Martin         794343
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+            Artist  YouTube_Views
+0    Martin Garrix       20754233
+1          Tove Lo       13024653
+2  Porter Robinson        6697116
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+             Artist  1001T_Supports  1001T_TotPlays
+0    Olaf Blackwood              54              62
+1     Robbie Mendez              54              62
+2    Steff da Campo              54              62
+3          Hardwell              47              59
+4     Amba Shepherd              25              31
+5  SICK INDIVIDUALS              25              31
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+        Artist  1001T_Supports  1001T_TotPlays
+0     Malarkey             259             325
+1   Don Diablo             240             311
+2  RetroVision             200             241
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+          Artist  Soundcloud_Plays
+0        Slushii             92261
+1  Doctor Neiman             47607
+2   Micah Martin             47607
+3          Conro             46249
+4           Dyro             46249
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+            Artist  Soundcloud_Plays
+0    Martin Garrix            680361
+1  Porter Robinson            524795
+2          Tove Lo            518041
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+--- LABELS ---
+
+/// WEEK ///
+
+               Label  YouTube_Views
+0  Hollywood Records        2447620
+1        STMPD RCRDS        2447620
+2         Monstercat        1064918
+3                NCS         794343
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+         Label  YouTube_Views
+0  STMPD RCRDS       22836325
+1          NCS        8619188
+2      MOM+POP        6697116
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+              Label  1001T_Supports  1001T_TotPlays
+0  Spinnin' Records              54              62
+1    Revealed Music              47              59
+2        Monstercat               6              10
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - CHANGE! - )
+
+              Label  1001T_Supports  1001T_TotPlays
+0       STMPD RCRDS            1209            1477
+1           HEXAGON             831            1002
+2  Spinnin' Records             470             677
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+               Label  Soundcloud_Plays
+0         Monstercat            138510
+1                NCS             47607
+2  Hollywood Records             32104
+3        STMPD RCRDS             32104
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+         Label  Soundcloud_Plays
+0   Monstercat           1481917
+1  STMPD RCRDS           1226735
+2      MOM+POP            524795
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+

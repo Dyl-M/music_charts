@@ -1,0 +1,169 @@
+--- TRACKS ---
+
+/// WEEK ///
+
+                    Artist              Track_Name             Label  YouTube_Views
+0      Madison Mars, Feldz      Darkside (VIP Mix)  Spinnin' Records          76049
+1  Aiobahn, rionos, Tollef  amnesia (Tollef Remix)       STMPD RCRDS          17485
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+                          Artist       Track_Name                           Label  YouTube_Views
+0         Martin Garrix, Tove Lo         Pressure                     STMPD RCRDS       13124300
+1  AREA21, Martin Garrix, Maejor         La La La  STMPD RCRDS, Hollywood Records        4644652
+2                Porter Robinson  Look At The Sky                         MOM+POP        4115575
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+                    Artist              Track_Name             Label  1001T_Supports  1001T_TotPlays
+0      Madison Mars, Feldz      Darkside (VIP Mix)  Spinnin' Records              22              30
+1  Aiobahn, rionos, Tollef  amnesia (Tollef Remix)       STMPD RCRDS               2               2
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+                              Artist      Track_Name                              Label  1001T_Supports  1001T_TotPlays
+0                 Bleu Clair, OOTORO  Beat Like This                        STMPD RCRDS             143             172
+1                         Don Diablo     Eyes Closed                            HEXAGON             134             170
+2  David Guetta, MORTEN, John Martin      Impossible  Musical Freedom, Spinnin' Records             128             194
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+                    Artist              Track_Name             Label  Soundcloud_Plays
+0      Madison Mars, Feldz      Darkside (VIP Mix)  Spinnin' Records              8642
+1  Aiobahn, rionos, Tollef  amnesia (Tollef Remix)       STMPD RCRDS              4116
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+                   Artist       Track_Name        Label  Soundcloud_Plays
+0  Martin Garrix, Tove Lo         Pressure  STMPD RCRDS            524153
+1         Porter Robinson  Look At The Sky      MOM+POP            262431
+2         Porter Robinson         Musician      MOM+POP            212679
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+--- ARTISTS ---
+
+/// WEEK ///
+
+         Artist  YouTube_Views
+0         Feldz          76049
+1  Madison Mars          76049
+2       Aiobahn          17485
+3        Tollef          17485
+4        rionos          17485
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - CHANGE! - )
+
+          Artist  YouTube_Views
+0  Martin Garrix       22602577
+1        Tove Lo       13124300
+2         AREA21        8162372
+3         Maejor        8162372
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+         Artist  1001T_Supports  1001T_TotPlays
+0         Feldz              22              30
+1  Madison Mars              22              30
+2       Aiobahn               2               2
+3        Tollef               2               2
+4        rionos               2               2
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+        Artist  1001T_Supports  1001T_TotPlays
+0     Malarkey             260             329
+1   Don Diablo             242             315
+2  RetroVision             201             242
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+         Artist  Soundcloud_Plays
+0         Feldz              8642
+1  Madison Mars              8642
+2       Aiobahn              4116
+3        Tollef              4116
+4        rionos              4116
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+            Artist  Soundcloud_Plays
+0    Martin Garrix            707552
+1  Porter Robinson            585480
+2          Tove Lo            524153
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+--- LABELS ---
+
+/// WEEK ///
+
+              Label  YouTube_Views
+0  Spinnin' Records          76049
+1       STMPD RCRDS          17485
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - CHANGE! - )
+
+               Label  YouTube_Views
+0        STMPD RCRDS       24731161
+1                NCS        8690230
+2  Hollywood Records        8162372
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+              Label  1001T_Supports  1001T_TotPlays
+0  Spinnin' Records              22              30
+1       STMPD RCRDS               2               2
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+              Label  1001T_Supports  1001T_TotPlays
+0       STMPD RCRDS            1250            1528
+1           HEXAGON             834            1008
+2  Spinnin' Records             482             697
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// WEEK ///
+
+              Label  Soundcloud_Plays
+0  Spinnin' Records              8642
+1       STMPD RCRDS              4116
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/// ALL TIME /// ( - NO CHANGE! - )
+
+         Label  Soundcloud_Plays
+0   Monstercat           1520201
+1  STMPD RCRDS           1266270
+2      MOM+POP            585480
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
